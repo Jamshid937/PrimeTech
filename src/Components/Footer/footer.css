@@ -1,0 +1,28 @@
+.footer__tel>p{
+    color: #1E1E1E;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 15px */
+    letter-spacing: -0.11px;
+}
+.footer__location>p{
+    color: #1E1E1E;
+    font-family: 'Inter';
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 12px */
+    letter-spacing: -0.088px;
+}
+.footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+border-top: 4px solid #1E1E1E;
+margin-top: 30px;
+padding-top: 20px;
+flex-wrap: wrap;
+}

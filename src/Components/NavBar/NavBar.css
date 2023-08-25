@@ -1,0 +1,302 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: #EFE3FF;
+  width: 100%;
+  padding-top: 10px;
+
+}
+.header__media{
+width: 31px;
+height: 31px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2.5px;
+background-color: #757575;
+border-radius: 50%;
+}
+.header__media>i{
+color: #ffffff;
+}
+.header__logo{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+.header__logo>p{
+  color: #1E1E1E;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 18px */
+  letter-spacing: -0.132px;
+}
+.nav-logo{
+width: 64px;
+height: 64px;
+padding: 20px 10px;
+background-color: #757575;
+border-radius: 50%;
+}
+.nav-logo>a>img{
+width: 100%;
+height: 100%;
+}
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-item>a{
+padding: 5px 8px;
+background-color: #757575;
+color: #1E1E1E;
+text-decoration: none;
+border-radius: 8px;
+}
+.nav-menu {
+
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: auto;
+}
+
+.nav-links {
+
+  color: #333;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #FF723A;
+}
+
+.nav-item.active {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.navbar.active {
+  background: #fff;
+  transition: 0.1s;
+}
+
+.nav-item__phone {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom:auto ;
+}
+
+.nav-item__phone>a>img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-item_select {
+  width: 64px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 2px solid #757575;
+  background: #757575;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 6px;
+  outline: none;
+color: #1E1E1E;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .nav-item__phone>a :last-child {
+    display: block;
+  }
+  .nav-item__phone {
+
+    gap: 0px;
+}
+  .nav-item_select__bar {
+    display: block;
+  }
+  .nav-item_select{
+  display: none;
+  }
+  .nav-item__phone>a :first-child {
+    display: none;
+  }
+
+  .navbar {
+    background: #EFE3FF;
+  }
+
+  .nav-item:hover .nav-item__dropdown {
+    display: none;
+  }
+
+  .nav-links {
+    color: #FFF;
+  }
+
+  .nav-bar__last {
+    display: block;
+  }
+
+
+
+  .nav-logo {
+    margin: 0 auto;
+  }
+
+
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    background: #FF723A;
+  }
+
+  .nav-menu.active {
+
+    background: #EFE3FF;
+    display: flex;
+    align-items: center;
+    left: 0px;
+    top: 79px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-bottom: 20px;
+    height: 100vh;
+    padding: 51px;
+    gap: 20px;
+  }
+
+  .nav-item .active {
+    color: #ffffff;
+    border: none;
+  }
+
+  .nav-links {
+    padding: 8px;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffffff;
+
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .nav-logo {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+
+  .nav-logo {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+
+  .nav-logo {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+
+  .nav-logo {
+    font-size: 17px;
+  }
+}
