@@ -1,9 +1,12 @@
 import React from 'react'
 import './NavBar.css'
 import { useTranslation } from 'react-i18next';
+import Container from '../../layout/Container'
 import logo from '../../imgs/logo.png'
-
-
+import gift from '../../imgs/Gift.png'
+import facebook from '../../imgs/facebook.png'
+import telegram from '../../imgs/telegram.png'
+import instagram from '../../imgs/instagram.png'
 function NavBar() {
   const { t, i18n } = useTranslation();
 
@@ -17,20 +20,16 @@ function NavBar() {
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
   return (
+    <div className="transparent">
+    <div className='back'>
     <div className={navBar ? 'navbar active' : 'navbar'}  >
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">
           <div className='header__logo'>
-            <div className="nav-logo">
-              <a exact href="#home"  >
+              <a exact href="#home" className='nav-logo' >
                 <img src={logo} alt="" />
               </a>
-            </div>
-                <p>
-                Prime Tech <br />
-                IT kompaniyasi
-                </p>
           </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -40,10 +39,9 @@ function NavBar() {
 
             <li className="nav-item">
               <div className='header__media'>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </div>
-              <div className='header__media'>
-               <i class="fa fa-facebook" aria-hidden="true"></i>
+                <img src={telegram} alt="" />
+                <img src={instagram} alt="" />
+                <img src={facebook} alt="" />
               </div>
             </li>
 
@@ -64,7 +62,23 @@ function NavBar() {
           </div>
         </div>
       </nav>
+
     </ div>
+    <Container>
+              <div className='header__hero'>
+        <h1 className='header__hero__title'>
+          Biz bilan Biznes va IT ni birga bog’lang
+        </h1>
+        
+            <a href="#" className='header__hero__btn'>Royhatdan otish</a>
+        <div className='header__hero__gift'>
+            <img src={gift} alt="" />
+            <p>Sotuvni 3x ga oshiradigon mahsus kitob</p>
+        </div>
+        </div> 
+    </Container>
+    </div>
+    </div>
   );
 }
 

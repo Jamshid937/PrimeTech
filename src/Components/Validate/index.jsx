@@ -5,9 +5,12 @@ const Validate = () => {
 
   return (
     <div className='Validate'>
+      <div className='validate__back'> 
         <div className='validate__logo'>
            <img src={logo} alt="" />
         </div>
+      </div>
+
         <div>
             <h2 className='validate__title'>Siz bilan bog'lanishimiz uchun sòrovnomani tòldiring.</h2>
             <form className='validate__form'>

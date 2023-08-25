@@ -1,48 +1,70 @@
-.Validate{
-display: flex;
-padding: 10px;
-justify-content: space-between;
+.Validate {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #0E0E0E;
+    margin-top: 107px;
 }
-.validate__logo{
-width: 112px;
-height: 116px;
-background-color:#757575;
-display: flex;justify-content: center;align-items: center;
-border-radius:8px ;
+
+.validate__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    width: 100%;
+    height: 550px;
+    background-image: url('../../imgs/Ellipse.png');
+    background-repeat: no-repeat;
 }
-.validate__logo>img{
-width: 50px;
-height: 50px;
+
+.validate__logo {
+    max-width: 420px;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../imgs/logoBack.png');
+    background-repeat: no-repeat;
 }
-.validate__title{
-    color: #1E1E1E;
+
+.validate__title {
+    color: #FFF;
+    text-align: center;
     font-family: 'Inter';
-    font-size: 15px;
+    font-size: 35px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 22.5px */
-    letter-spacing: -0.165px;
-    max-width: 208px;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 508px;
     width: 100%;
 }
-.validate__form{
-display: flex;
-flex-direction: column;
-gap: 8px;
+
+.validate__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
-.validate__form>input{
-color: #fff;
-background-color: #1E1E1E;
-border-radius: 6px;
-height: 32px;
-text-align: center;
+
+.validate__form>input {
+    border-radius: 5px;
+    background: #FFEBEC;
+    padding: 15px;
+    max-width: 350px;
+    width: 100%;
 }
-.validate__form>button{
+
+.validate__form>button {
     color: #fff;
-    background-color: #1E1E1E;
-    border-radius: 6px;
-    height: 32px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
     text-align: center;
+    padding: 21px 58px;
+    margin-top: 33px;
 }
 
 @media screen and (max-width:371px) {
