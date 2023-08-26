@@ -198,9 +198,9 @@ padding-bottom: 40px;
     display: none;
   }
 
-  .navbar {
+  /* .navbar {
     background: #EFE3FF;
-  }
+  } */
 
   .nav-item:hover .nav-item__dropdown {
     display: none;

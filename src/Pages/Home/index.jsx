@@ -42,7 +42,7 @@ const Home = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='who'>
+                 <div className='who'>
                     <h2 className='who__title'>PrimeTech IT kompaniyasi xizmatlari kimlar uchun?</h2>
                     <div className='who__cards'>
                         <div className='who__cards__item'>
@@ -71,7 +71,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='about'>
+               <div className='about'>
                     <h2>PrimeTech qanday kompaniya?</h2>
                     <div className='about__box'>
                         <div className='about__box__img'>
@@ -87,7 +87,7 @@ const Home = () => {
                         <a href="#" className='about__btn'>Royhatdan otish</a>
                     </div>
                 </div>
-                <div className='services'>
+                 <div className='services'>
                     <h2 className='services__title'>Xizmatlarimizdan foydalanish orqali siz nimalarga ega bòlasiz?</h2>
                     <div className='services__cards'>
                         <div className='services__cards__item'>
@@ -160,7 +160,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='biznes'>
+               <div className='biznes'>
                     <h2 className='biznes__title'>Biznes va IT birga bog’laymiz</h2>
                     <p>Tadbirkorlarni biznesini avtomatlashtirish orqali,biznesini bir bisqichdan ikkinchi bosqichga olib chiqishga,hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
                     <div className='biznes__cards'>
@@ -186,7 +186,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='biznes__bottom'>
+                 <div className='biznes__bottom'>
                     <div>
                         <div className='biznes__box'>
                             <div className='biznes__box__img'>
@@ -343,21 +343,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='comments__bottom'>
-                    <h2>Mijozlarimiz fikrlari</h2>
-                    <div className='shop__carusel'>
-                        <div className='shop__carusel__cards'>
-                            <div className='shop__carusel__cards__item'></div>
-                            <div className='shop__carusel__cards__item'></div>
-                            <div className='shop__carusel__cards__item'></div>
-                        </div>
-                        <div className='shop__carusel__vektor'>
-                            <img src={left} alt="" />
-                            <img src={right} alt="" />
-                        </div>
-                    </div>
-                </div> */}
-                <div className="helper">
+               <div className="helper">
                     <h2>Biz yordam bergan bizneslar</h2>
                     <div className="helper__cards">
                         <div className="helper__cards__item">
@@ -388,7 +374,7 @@ const Home = () => {
                 </div>
                 <Validate />
 
-                <div className="aksiya">
+                 <div className="aksiya">
                     <h2>Hoziroq ròyhatdan òting va sotuvni 3x ga oshiradigan maxsus kitobni bepul qòlga kiriting</h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
@@ -412,7 +398,7 @@ const Home = () => {
                    
                 </div>
                 <div>
-                <h2 className="aksiya__title">Faqat bu taklif sizlaruchun</h2>
+                <h2 className="aksiya__title">Faqat bu taklif sizlar uchun</h2>
                 <div className="aksiya__bottom">
                     <div className='aksiya__bottom__info'>
                         <p>Xizmatlarimizdan foydalanish orqali yana ushbu narsalarga ega bòlasiz.</p>
