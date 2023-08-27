@@ -267,25 +267,8 @@ const Home = () => {
                                     <p>Toshkent</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className='comments__cards__item'>
-                            <div className='comments__cards__img__back'>
-                                <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
-                                </div>
-                            </div>
-
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
-                            <div className='comments__cards__info'>
-                                <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
-                                </div>
-                                <div className='comments__cards__info__text'>
-                                    <p>IT</p>
-                                    <p>Toshkent</p>
-                                </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -307,25 +290,8 @@ const Home = () => {
                                     <p>Toshkent</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className='comments__cards__item'>
-                            <div className='comments__cards__img__back'>
-                                <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
-                                </div>
-                            </div>
-
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
-                            <div className='comments__cards__info'>
-                                <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
-                                </div>
-                                <div className='comments__cards__info__text'>
-                                    <p>IT</p>
-                                    <p>Toshkent</p>
-                                </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -347,6 +313,9 @@ const Home = () => {
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
+                            </div>
                         </div>
                         <div className='comments__cards__item'>
                             <div className='comments__cards__img__back'>
@@ -366,6 +335,55 @@ const Home = () => {
                                     <p>IT</p>
                                     <p>Toshkent</p>
                                 </div>
+                            </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
+                            </div>
+                        </div>
+                        <div className='comments__cards__item'>
+                            <div className='comments__cards__img__back'>
+                                <div className='comments__cards__img'>
+                                    <img src={anvar} alt="" />
+                                </div>
+                            </div>
+
+                            <h4>Husan mamasaidov</h4>
+                            <p>Decos,Mfaktor</p>
+                            <div className='comments__cards__info'>
+                                <div className='comments__cards__info__text'>
+                                    <p>Soxa</p>
+                                    <p>Shahar</p>
+                                </div>
+                                <div className='comments__cards__info__text'>
+                                    <p>IT</p>
+                                    <p>Toshkent</p>
+                                </div>
+                            </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
+                            </div>
+                        </div>
+                        <div className='comments__cards__item'>
+                            <div className='comments__cards__img__back'>
+                                <div className='comments__cards__img'>
+                                    <img src={anvar} alt="" />
+                                </div>
+                            </div>
+
+                            <h4>Husan mamasaidov</h4>
+                            <p>Decos,Mfaktor</p>
+                            <div className='comments__cards__info'>
+                                <div className='comments__cards__info__text'>
+                                    <p>Soxa</p>
+                                    <p>Shahar</p>
+                                </div>
+                                <div className='comments__cards__info__text'>
+                                    <p>IT</p>
+                                    <p>Toshkent</p>
+                                </div>
+                            </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
                             </div>
                         </div>
                     </div>

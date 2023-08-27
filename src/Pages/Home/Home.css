@@ -843,7 +843,6 @@ background: #FFF;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 27px */
     letter-spacing: -0.198px;
     border-right: 3px solid #000F3D;
     padding-right: 97px;
@@ -892,7 +891,26 @@ background: #FFF;
     margin: 0 auto;
     text-align: center;
 }
-
+.comments__cards__btn>a{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: -0.242px;
+}
+.comments__cards__btn{
+padding: 4px 36px;
+border-radius: 10px;
+background: #1551FF;
+display: flex;
+justify-content: center;
+width: 135px;
+margin: 0 auto;
+margin-top: 28px;
+}
 /* comments media */
 @media screen and (max-width:1165px) {
     .comments__cards {
