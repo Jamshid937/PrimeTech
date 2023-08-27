@@ -879,6 +879,7 @@ justify-content: center;
     grid-template-rows: auto auto auto;
     grid-template-columns: 350px 350px 350px;
     gap: 0 50px;
+    margin-top: 61px;
 }
 
 .comments__bottom>h2 {
