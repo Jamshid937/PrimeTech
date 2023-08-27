@@ -448,6 +448,7 @@ justify-content: center;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 76px 36px;
+    margin-top: 98px;
 }
 
 /* services media */
