@@ -56,7 +56,6 @@ function NavBar() {
                 <a href="https://web.telegram.org/"><img src={telegram} alt="" /></a>
                 <a href="https://www.instagram.com/"><img src={instagram} alt="" /></a>
                 <a href="https://ru-ru.facebook.com/"><img src={facebook} alt="" /></a>
-                
               </div>
             </li>
 
@@ -80,12 +79,11 @@ function NavBar() {
 
     </ div>
     <Container>
-              <div className='header__hero'>
+      <div className='header__hero'>
         <h1 className='header__hero__title'>
           Biz bilan <span>Biznes</span>  va <span>IT</span>  ni birga bog’lang
         </h1>
-        
-            <a href="#validate" className='header__hero__btn'>{t('btn')}</a>
+      <a href="#validate" className='header__hero__btn'>{t('btn')}</a>
         <div className='header__hero__gift'>
             <img src={gift} alt="" />
             <p>{t('p')}</p>

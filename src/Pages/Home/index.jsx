@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-
+import { useTranslation } from 'react-i18next';
 import NavBar from '../../Components/NavBar/NavBar'
 import Container from '../../layout/Container'
 import Validate from '../../Components/Validate'
@@ -10,8 +10,6 @@ import who from '../../imgs/mechanical.png'
 import increase from '../../imgs/increase.png'
 import warning from '../../imgs/warning.png'
 import logo from '../../imgs/logo.png'
-import right from '../../imgs/right.png'
-import left from '../../imgs/left.png'
 import booking from '../../imgs/booking.png'
 import bot from '../../imgs/bot.png'
 import internet from '../../imgs/internet.png'
@@ -21,14 +19,17 @@ import check from '../../imgs/check.png'
 import anvar from '../../imgs/anvar.png'
 import mobion from '../../imgs/mobion.png'
 import aksiya from '../../imgs/aksiya.png'
-import './Home.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
+import rizvon from '../../imgs/rizvon.png'
+import toshkent from '../../imgs/tashkent.jpg'
+import av from '../../imgs/av.jpg'
+import db from '../../imgs/db.png'
+import bek from '../../imgs/bek.png'
+import gesso from '../../imgs/gesso.png'
+import aminows from '../../imgs/aminows.png'
 import SwiperCard from '../../Components/Swiper/inddex';
+import './Home.css'
 const Home = () => {
-
+    const { t, i18n } = useTranslation();
     const [timerDays, setTimerDays] = useState('00')
     const [timerHours, setTimerHours] = useState('00');
     const [timerMinutes, setTimerMinutes] = useState('00');
@@ -81,7 +82,7 @@ const Home = () => {
                         </li>
                         <li className='header__hero__bottom-box__item'>
                             <span>90NPS</span>
-                            <p> Kerakli dasturiy taminot orqali xarajatlaringizni 25%gacha kamaytirasiz.</p>
+                            <p>Kerakli dasturiy ta’minot orqali xarajatlaringizni 25%gacha kamaytirasiz.</p>
                         </li>
                         <li className='header__hero__bottom-box__item'>
                             <span>4Yil</span>
@@ -94,7 +95,7 @@ const Home = () => {
                     <div className='who__cards'>
                         <div className='who__cards__item'>
                             <img src={who} alt="" />
-                            <h4>Biznesni tizimlashtirmoqchi bolganlar uchun</h4>
+                            <h4>Biznesni tizimlashtirmoqchi bo’lganlar uchun</h4>
                             <ul>
                                 <li>Hodimlar ozlariga berilayotgan vazifani bajarmayaptimi</li>
                                 <li>Jamoani boshqarishda muammo bormi?</li>
@@ -102,18 +103,18 @@ const Home = () => {
                         </div>
                         <div className='who__cards__item'>
                             <img src={increase} alt="" />
-                            <h4>Biznesni tizimlashtirmoqchi bolganlar uchun</h4>
+                            <h4>Biznesni kengaytirmoqchi bo’lganlar uchun</h4>
                             <ul>
-                                <li>Hodimlar ozlariga berilayotgan vazifani bajarmayaptimi</li>
-                                <li>Jamoani boshqarishda muammo bormi?</li>
+                                <li>Molya bo’limidagi raqamlarni hisoblay olmayapsizmi?</li>
+                                <li>Biznesni kengaytirmoqchisiz, lekin hodimlar tayyor emasmi?</li>
                             </ul>
                         </div>
                         <div className='who__cards__item'>
                             <img src={warning} alt="" />
-                            <h4>Biznesni tizimlashtirmoqchi bolganlar uchun</h4>
+                            <h4>Sotuv va mijozlar bilan muammosi borlar uchun</h4>
                             <ul>
-                                <li>Hodimlar ozlariga berilayotgan vazifani bajarmayaptimi</li>
-                                <li>Jamoani boshqarishda muammo bormi?</li>
+                                <li>Sotuv bo’yicha amalga oshirilishi kerak bo’lgan  rejalar bajarilmayaptimi?</li>
+                                <li>Nasiyalaringiz ko’payib ketyaptimi?</li>
                             </ul>
                         </div>
                     </div>
@@ -131,17 +132,17 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='about__btn__box'>
-                        <a href="#validate" className='about__btn'>Royhatdan otish</a>
+                        <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
                     </div>
                 </div>
                 <div className='services'>
-                    <h2 className='services__title'> <span>Xizmatlarimizdan</span>  foydalanish orqali siz nimalarga ega bòlasiz?</h2>
+                    <h2 className='services__title'> <span>Xizmatlarimizdan</span>  foydalanish orqali siz nimalarga ega bo`lasiz?</h2>
                     <div className='services__cards'>
                         <div className='services__cards__item'>
                             <div className='services__cards__item--img'>
                                 <img src={internet} alt="" />
                             </div>
-                            <h4>Web sayt</h4>
+                            <h4>Veb sayt</h4>
                             <p>Doimiy patensial mijozlarga ega bòlasiz
                                 Tóliq òqish qilish kk da malumot kiritamiz
                             </p>
@@ -152,9 +153,10 @@ const Home = () => {
                                 <img src={bot} alt="" />
                             </div>
                             <h4>Telegram bot</h4>
-                            <p>Doimiy patensial mijozlarga ega bòlasiz
-                                Tóliq òqish qilish kk da malumot kiritamiz
+                            <p>Marketingni rivojlantiradigan bepul xodimga ega bo‘lasiz
+                            Yana to‘liq ma’lumot uchun
                             </p>
+                            
                             <a href="#validate">Batafsil</a>
                         </div>
                         <div className='services__cards__item'>
@@ -163,8 +165,7 @@ const Home = () => {
                             </div>
 
                             <h4>CRM</h4>
-                            <p>Doimiy patensial mijozlarga ega bòlasiz
-                                Tóliq òqish qilish kk da malumot kiritamiz
+                            <p>Kompaniyangiz ichki tizimini to‘liq avtomatlashtirasiz
                             </p>
                             <a href="#validate">Batafsil</a>
                         </div>
@@ -184,7 +185,7 @@ const Home = () => {
               <SwiperCard></SwiperCard>
                 <div className='biznes'>
                     <h2 className='biznes__title'> <span>Biznes</span> va <span> IT </span> birga bog’laymiz</h2>
-                    <p>Tadbirkorlarni biznesini avtomatlashtirish orqali,biznesini bir bisqichdan ikkinchi bosqichga olib chiqishga,hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
+                    <p>Tadbirkorlarning biznesini avtomatlashtirish orqali biznesni bir bosqichdan ikkinchi bosqichga olib chiqishga hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
                     <div className='biznes__cards'>
                         <div className='biznes__cards__item'>
                             <p>Web sayt orqali daromadni oshirish</p>
@@ -221,22 +222,26 @@ const Home = () => {
                         </div>
                         <div className='biznes__bottom--gift'>
                             <img src={gift} alt="" />
-                            <p>Sotuvni 3x ga oshiradigon mahsus kitob</p>
+                            <p>{t('p')}</p>
                         </div>
                     </div>
                     <div className='biznes__bottom__info'>
                         <h4>Xizmatlarimizdan foydalangandan sòng ushbu natijalarga erishasiz.</h4>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Biznesingizni karra-karra ostiruvchi strategiyalarni bilib olasiz</p>
+                            <p>Sayt orqali samarali reklama berishni</p>
                         </div>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Hodimlarni yaxshi ishlashi uchun to’g’ri KPI qoyishni mukammla o’rganasiz</p>
+                            <p>CRM orqali kompaniya ichki tizimini qurishni</p>
                         </div>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Biznesignizni savdoga tasir qiluvchi har bir ko’rsatkichni aniq hisoblaysiz</p>
+                            <p>Telegram bot orqali marketingni rivojlantirishni</p>
+                        </div>
+                        <div className='biznes__bottom__info__text'>
+                            <img src={check} alt="" />
+                            <p>Mobil ilova orqali umumiy ma’lumotlaringizni bir joyga jamlashga</p>
                         </div>
                     </div>
                 </div>
@@ -377,37 +382,37 @@ const Home = () => {
 
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={rizvon} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={bek} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={aminows} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={gesso} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={toshkent} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={db} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="helper__cards__item">
-                                <img src={mobion} alt="" />
+                                <img src={av} alt="" />
                             </div>
                         </div>
                     </div>
@@ -415,7 +420,7 @@ const Home = () => {
                 <Validate />
 
                 <div className="aksiya">
-                    <h2>Hoziroq ròyhatdan òting va sotuvni <span>3x</span>  ga oshiradigan maxsus <span>kitobga</span>  ega bo`ling</h2>
+                    <h2>Hoziroq ro‘yxatdan o‘ting va sotuvn <span>3x</span>  ga oshiradigan  <span>kitobga</span>  ega bo‘ling! </h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
@@ -438,16 +443,16 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <h2 className="aksiya__title">Faqat bu <span>taklif</span>  sizlar uchun</h2>
+                    <h2 className="aksiya__title">Bu <span>taklif</span> faqat sizlar uchun</h2>
                     <div className="aksiya__bottom">
                         <div className='aksiya__bottom__info'>
-                            <p>Xizmatlarimizdan foydalanish orqali yana ushbu narsalarga ega bòlasiz.</p>
+                            <p>Xizmatimizdan foydalanish orqali Siz yana quyidagilarga ega bo‘lasiz:</p>
                             <ul>
-                                <li><div>1</div> Ma’lumot beruvchi bot</li>
-                                <li><div>2</div> Domen va hosting 1oylik</li>
-                                <li><div>3</div> Call center bot</li>
-                                <li><div>4</div> Hizmatlar uchun cashback</li>
-                                <li><div>5</div> Mahsus sovg’aga ega bo’lasiz </li>
+                                <li><div>1</div>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga </li>
+                                <li><div>2</div> 1 oylik domen va hostingga</li>
+                                <li><div>3</div> Call center botga</li>
+                                <li><div>4</div> Xizmatlar uchun keshbekga</li>
+                                <li><div>5</div> Maxsus sovg’aga</li>
                             </ul>
                         </div>
                         <div className='aksiya__bottom__img'>

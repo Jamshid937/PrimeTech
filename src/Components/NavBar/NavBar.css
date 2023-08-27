@@ -120,19 +120,9 @@ height: 650px;
   gap: 10px;
 }
 
-.nav-item:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width 0.7s ease, background-color 0.5s ease;
-}
 
-.nav-item:hover:after {
-  width: 100%;
-  background: #6188FF;
-}
+
+
 
 .nav-item.active {
   color: #ffffff;
@@ -236,8 +226,7 @@ height: 650px;
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
-
-    background: #FF723A;
+    background: #fff;
   }
 
   .nav-menu.active {
