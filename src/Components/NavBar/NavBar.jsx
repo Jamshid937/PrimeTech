@@ -34,14 +34,15 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <a href="tel">+998938111881</a>
+              <a href="tel:998938111881"><span>+998</span>938111881</a>
             </li>
 
             <li className="nav-item">
               <div className='header__media'>
-                <img src={telegram} alt="" />
-                <img src={instagram} alt="" />
-                <img src={facebook} alt="" />
+                <a href="https://web.telegram.org/"><img src={telegram} alt="" /></a>
+                <a href="https://www.instagram.com/"><img src={instagram} alt="" /></a>
+                <a href="https://ru-ru.facebook.com/"><img src={facebook} alt="" /></a>
+                
               </div>
             </li>
 
@@ -67,13 +68,13 @@ function NavBar() {
     <Container>
               <div className='header__hero'>
         <h1 className='header__hero__title'>
-          Biz bilan Biznes va IT ni birga bog’lang
+          Biz bilan <span>Biznes</span>  va <span>IT</span>  ni birga bog’lang
         </h1>
         
-            <a href="#" className='header__hero__btn'>Royhatdan otish</a>
+            <a href="#validate" className='header__hero__btn'>{t('btn')}</a>
         <div className='header__hero__gift'>
             <img src={gift} alt="" />
-            <p>Sotuvni 3x ga oshiradigon mahsus kitob</p>
+            <p>{t('p')}</p>
         </div>
         </div> 
     </Container>

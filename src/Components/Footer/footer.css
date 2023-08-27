@@ -17,18 +17,38 @@
 }
 .footer__location{
 display: flex;
+gap: 40px;
 }
 .footer{
 display: flex;
 justify-content: space-between;
 align-items: center;
 gap: 20px;
-border-top: 2px solid #FD0000;
+border-top: 2px solid #000F3D;
 margin-top: 30px;
 padding-top: 20px;
 flex-wrap: wrap;
 }
-
+.creator{
+display: flex;
+background-color: #6188FF;
+gap: 15px;
+align-items: center;
+padding-left: 10px;
+border-radius: 10px;
+}
+.creator>p{
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.creator>img{
+    width: 53.631px;
+    height: 50px;
+}
 @media screen and (max-width:768px) {
     .footer{
     flex-direction: column;

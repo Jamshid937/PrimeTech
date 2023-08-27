@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useRef, useState} from 'react'
 import NavBar from '../../Components/NavBar/NavBar'
 import Container from '../../layout/Container'
 import Validate from '../../Components/Validate'
@@ -22,6 +22,47 @@ import mobion from '../../imgs/mobion.png'
 import aksiya from '../../imgs/aksiya.png'
 import './Home.css'
 const Home = () => {
+
+const [timerDays,setTimerDays] = useState('00')
+const [timerHours,setTimerHours] = useState('00');
+const [timerMinutes,setTimerMinutes] = useState('00');
+const [timerSeconds,setTimerSeconds] = useState('00');
+
+
+let interval = useRef()
+
+const startTimer = () => {
+const countdownDate = new Date('August 29, 2025 00:00:00').getTime()
+
+interval = setInterval(()=>{
+const now = new Date().getTime()
+const distance = countdownDate - now;
+
+const days = Math.floor(distance / (1000*60*60*24))
+const hours = Math.floor((distance % (1000*60*60*24) / (1000*60*60)))
+const minutes = Math.floor((distance % (1000*60*60)) / (1000*60))
+const seconds = Math.floor((distance % (1000*60)) / 1000)
+
+if (distance < 0){
+clearInterval(interval.current)
+}else{
+setTimerDays(days)
+setTimerHours(hours)
+setTimerMinutes(minutes)
+setTimerSeconds(seconds)
+}
+
+}, 1000)
+
+}
+useEffect(() => {
+startTimer()
+return () => {
+ clearInterval(interval.current)
+}
+})
+
+
     return (
         <>
             <NavBar></NavBar>
@@ -43,7 +84,7 @@ const Home = () => {
                     </ul>
                 </div>
                  <div className='who'>
-                    <h2 className='who__title'>PrimeTech IT kompaniyasi xizmatlari kimlar uchun?</h2>
+                    <h2 className='who__title'>PrimeTech <span>IT</span>  kompaniyasi xizmatlari kimlar uchun?</h2>
                     <div className='who__cards'>
                         <div className='who__cards__item'>
                             <img src={who} alt="" />
@@ -72,11 +113,11 @@ const Home = () => {
                     </div>
                 </div>
                <div className='about'>
-                    <h2>PrimeTech qanday kompaniya?</h2>
+                    <h2> <span>PrimeTech</span>qanday kompaniya?</h2>
                     <div className='about__box'>
                         <div className='about__box__img'>
                             <a href="#" className='about__box__logo'><img src={logo} alt="" /></a>
-                            <p>Prime Tech IT nilan shug’ullanadigon kompaniya</p>
+                            <p>Prime Tech <span>IT</span>  nilan shug’ullanadigon kompaniya</p>
                         </div>
                         <div className='about__box__info'>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -84,21 +125,21 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='about__btn__box'>
-                        <a href="#" className='about__btn'>Royhatdan otish</a>
+                        <a href="#validate" className='about__btn'>Royhatdan otish</a>
                     </div>
                 </div>
                  <div className='services'>
-                    <h2 className='services__title'>Xizmatlarimizdan foydalanish orqali siz nimalarga ega bòlasiz?</h2>
+                    <h2 className='services__title'> <span>Xizmatlarimizdan</span>  foydalanish orqali siz nimalarga ega bòlasiz?</h2>
                     <div className='services__cards'>
                         <div className='services__cards__item'>
                             <div className='services__cards__item--img'>
                                 <img src={internet} alt="" />
                             </div>
-
                             <h4>Web sayt</h4>
                             <p>Doimiy patensial mijozlarga ega bòlasiz
                                 Tóliq òqish qilish kk da malumot kiritamiz
                             </p>
+                            <a href="#validate">Batafsil</a>
                         </div>
                         <div className='services__cards__item'>
                             <div className='services__cards__item--img'>
@@ -108,6 +149,7 @@ const Home = () => {
                             <p>Doimiy patensial mijozlarga ega bòlasiz
                                 Tóliq òqish qilish kk da malumot kiritamiz
                             </p>
+                            <a href="#validate">Batafsil</a>
                         </div>
                         <div className='services__cards__item'>
                             <div className='services__cards__item--img'>
@@ -118,6 +160,7 @@ const Home = () => {
                             <p>Doimiy patensial mijozlarga ega bòlasiz
                                 Tóliq òqish qilish kk da malumot kiritamiz
                             </p>
+                            <a href="#validate">Batafsil</a>
                         </div>
                         <div className='services__cards__item'>
 
@@ -128,11 +171,12 @@ const Home = () => {
                             <p>Doimiy patensial mijozlarga ega bòlasiz
                                 Tóliq òqish qilish kk da malumot kiritamiz
                             </p>
+                            <a href="#validate">Batafsil</a>
                         </div>
                     </div>
                 </div>
                 <div className='shop'>
-                    <h2 className='shop__title'>+36 ta tadbirkor bizni xizmatlarimiz foydalangan</h2>
+                    <h2 className='shop__title'> <span>+36 ta</span>  tadbirkor bizni xizmatlarimiz foydalangan</h2>
                     <div className='shop__carusel'>
                         <div className='shop__carusel__cards'>
                             <div className='shop__carusel__cards__item--back'>
@@ -161,7 +205,7 @@ const Home = () => {
                     </div>
                 </div>
                <div className='biznes'>
-                    <h2 className='biznes__title'>Biznes va IT birga bog’laymiz</h2>
+                    <h2 className='biznes__title'> <span>Biznes</span> va <span> IT </span> birga bog’laymiz</h2>
                     <p>Tadbirkorlarni biznesini avtomatlashtirish orqali,biznesini bir bisqichdan ikkinchi bosqichga olib chiqishga,hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
                     <div className='biznes__cards'>
                         <div className='biznes__cards__item'>
@@ -195,7 +239,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='about__btn__box'>
-                            <a href="#" className='about__btn'>Royhatdan otish</a>
+                            <a href="#validate" className='about__btn'>Royhatdan otish</a>
                         </div>
                         <div className='biznes__bottom--gift'>
                             <img src={gift} alt="" />
@@ -219,7 +263,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='comments'>
-                    <h2>Buning isbotini tadbirkorlarni fikridan bilib oling</h2>
+                    <h2>Buning isbotini <span>tadbirkorlarni</span>  fikridan bilib oling</h2>
                     <div className='comments__cards'>
                         <div className='comments__cards__item'>
                             <div className='comments__cards__img__back'>
@@ -344,61 +388,79 @@ const Home = () => {
                     </div>
                 </div>
                <div className="helper">
-                    <h2>Biz yordam bergan bizneslar</h2>
+                    <h2>Biz yordam bergan <span>bizneslar</span> </h2>
                     <div className="helper__cards">
+                        <div>
+                           
                         <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
+                            <img src={mobion} alt="" /> 
+                        </div>  
                         </div>
+
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
+                        <div>
                         <div className="helper__cards__item">
                           <img src={mobion} alt="" />
+                        </div>  
                         </div>
                     </div>
                 </div>
                 <Validate />
 
                  <div className="aksiya">
-                    <h2>Hoziroq ròyhatdan òting va sotuvni 3x ga oshiradigan maxsus kitobni bepul qòlga kiriting</h2>
+                    <h2>Hoziroq ròyhatdan òting va sotuvni <span>3x</span>  ga oshiradigan maxsus <span>kitobga</span>  ega bo`ling</h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
-                            <span>00</span>
+                        <span>{timerDays}</span>
                             <p>Kun</p>
                         </div>
                         <div className='aksiya__cards__item'>
-                            <span>00</span>
-                            <p>Kun</p>
+                            <span>{timerHours}</span>
+                            <p>Soat</p>
                         </div>
                         <div className='aksiya__cards__item'>
-                            <span>00</span>
-                            <p>Kun</p>
+                            <span>{timerMinutes}</span>
+                            <p>Minut</p>
                         </div>
                         <div className='aksiya__cards__item'>
-                            <span>00</span>
-                            <p>Kun</p>
+                            <span>{timerSeconds}</span>
+                            <p>Sekund</p>
                         </div>
                     </div>
                    
                 </div>
                 <div>
-                <h2 className="aksiya__title">Faqat bu taklif sizlar uchun</h2>
+                <h2 className="aksiya__title">Faqat bu <span>taklif</span>  sizlar uchun</h2>
                 <div className="aksiya__bottom">
                     <div className='aksiya__bottom__info'>
                         <p>Xizmatlarimizdan foydalanish orqali yana ushbu narsalarga ega bòlasiz.</p>

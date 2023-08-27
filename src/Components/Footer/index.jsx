@@ -23,6 +23,10 @@ const Footer = () => {
              <p>Mirobod tumani NBU bank roparasi</p>
           </div>
         </div>
+        <div className="creator">
+          <p>Creat by:</p>
+          <img src={logo} alt="" />
+        </div>
     </div>
   )
 }
