@@ -49,6 +49,9 @@ border-radius: 10px;
     width: 53.631px;
     height: 50px;
 }
+.footer__btn__box{
+
+}
 @media screen and (max-width:768px) {
     .footer{
     flex-direction: column;

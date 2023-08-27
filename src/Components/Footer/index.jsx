@@ -12,7 +12,7 @@ const Footer = () => {
               </a>
             </div>
         </div>
-        <div className='about__btn__box'>
+        <div className='footer__btn__box'>
             <a href="#" className='about__btn'>Royhatdan otish</a>
            </div>
 

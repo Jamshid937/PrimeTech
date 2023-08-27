@@ -108,7 +108,7 @@
 @media screen and (max-width:741px) {
     .header__hero__title {
         font-size: 55px;
-        padding-top: 130px;
+        margin-top: 130px;
     }
 }
 
@@ -151,7 +151,7 @@
 }
 
 .who__cards__item {
-    padding: 0px 24px 14px 18px;
+    padding: 0px 0px 0px 24px;
     height: 400px;
     border-radius: 8px;
     background-image: url('../../imgs/backHero.png');
