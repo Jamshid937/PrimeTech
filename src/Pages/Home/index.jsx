@@ -1,4 +1,5 @@
-import React,{useEffect, useRef, useState} from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+
 import NavBar from '../../Components/NavBar/NavBar'
 import Container from '../../layout/Container'
 import Validate from '../../Components/Validate'
@@ -21,46 +22,51 @@ import anvar from '../../imgs/anvar.png'
 import mobion from '../../imgs/mobion.png'
 import aksiya from '../../imgs/aksiya.png'
 import './Home.css'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import SwiperCard from '../../Components/Swiper/inddex';
 const Home = () => {
 
-const [timerDays,setTimerDays] = useState('00')
-const [timerHours,setTimerHours] = useState('00');
-const [timerMinutes,setTimerMinutes] = useState('00');
-const [timerSeconds,setTimerSeconds] = useState('00');
+    const [timerDays, setTimerDays] = useState('00')
+    const [timerHours, setTimerHours] = useState('00');
+    const [timerMinutes, setTimerMinutes] = useState('00');
+    const [timerSeconds, setTimerSeconds] = useState('00');
 
 
-let interval = useRef()
+    let interval = useRef()
 
-const startTimer = () => {
-const countdownDate = new Date('August 29, 2025 00:00:00').getTime()
+    const startTimer = () => {
+        const countdownDate = new Date('August 29, 2025 00:00:00').getTime()
 
-interval = setInterval(()=>{
-const now = new Date().getTime()
-const distance = countdownDate - now;
+        interval = setInterval(() => {
+            const now = new Date().getTime()
+            const distance = countdownDate - now;
 
-const days = Math.floor(distance / (1000*60*60*24))
-const hours = Math.floor((distance % (1000*60*60*24) / (1000*60*60)))
-const minutes = Math.floor((distance % (1000*60*60)) / (1000*60))
-const seconds = Math.floor((distance % (1000*60)) / 1000)
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-if (distance < 0){
-clearInterval(interval.current)
-}else{
-setTimerDays(days)
-setTimerHours(hours)
-setTimerMinutes(minutes)
-setTimerSeconds(seconds)
-}
+            if (distance < 0) {
+                clearInterval(interval.current)
+            } else {
+                setTimerDays(days)
+                setTimerHours(hours)
+                setTimerMinutes(minutes)
+                setTimerSeconds(seconds)
+            }
 
-}, 1000)
+        }, 1000)
 
-}
-useEffect(() => {
-startTimer()
-return () => {
- clearInterval(interval.current)
-}
-})
+    }
+    useEffect(() => {
+        startTimer()
+        return () => {
+            clearInterval(interval.current)
+        }
+    })
 
 
     return (
@@ -83,7 +89,7 @@ return () => {
                         </li>
                     </ul>
                 </div>
-                 <div className='who'>
+                <div className='who'>
                     <h2 className='who__title'>PrimeTech <span>IT</span>  kompaniyasi xizmatlari kimlar uchun?</h2>
                     <div className='who__cards'>
                         <div className='who__cards__item'>
@@ -112,7 +118,7 @@ return () => {
                         </div>
                     </div>
                 </div>
-               <div className='about'>
+                <div className='about'>
                     <h2> <span>PrimeTech</span>qanday kompaniya?</h2>
                     <div className='about__box'>
                         <div className='about__box__img'>
@@ -128,7 +134,7 @@ return () => {
                         <a href="#validate" className='about__btn'>Royhatdan otish</a>
                     </div>
                 </div>
-                 <div className='services'>
+                <div className='services'>
                     <h2 className='services__title'> <span>Xizmatlarimizdan</span>  foydalanish orqali siz nimalarga ega bòlasiz?</h2>
                     <div className='services__cards'>
                         <div className='services__cards__item'>
@@ -175,36 +181,8 @@ return () => {
                         </div>
                     </div>
                 </div>
-                <div className='shop'>
-                    <h2 className='shop__title'> <span>+36 ta</span>  tadbirkor bizni xizmatlarimiz foydalangan</h2>
-                    <div className='shop__carusel'>
-                        <div className='shop__carusel__cards'>
-                            <div className='shop__carusel__cards__item--back'>
-                                <div className='shop__carusel__cards__item'>
-                                    <h4>Husan Mamasaidov</h4>
-                                    <p>Decos,Mfaktor</p>
-                                </div>
-                            </div>
-                            <div className='shop__carusel__cards__item--back'>
-                                <div className='shop__carusel__cards__item'>
-                                    <h4>Husan Mamasaidov</h4>
-                                    <p>Decos,Mfaktor</p>
-                                </div>
-                            </div>
-                            <div className='shop__carusel__cards__item--back'>
-                                <div className='shop__carusel__cards__item'>
-                                    <h4>Husan Mamasaidov</h4>
-                                    <p>Decos,Mfaktor</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='shop__carusel__vektor'>
-                            <img src={left} alt="" />
-                            <img src={right} alt="" />
-                        </div>
-                    </div>
-                </div>
-               <div className='biznes'>
+              <SwiperCard></SwiperCard>
+                <div className='biznes'>
                     <h2 className='biznes__title'> <span>Biznes</span> va <span> IT </span> birga bog’laymiz</h2>
                     <p>Tadbirkorlarni biznesini avtomatlashtirish orqali,biznesini bir bisqichdan ikkinchi bosqichga olib chiqishga,hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
                     <div className='biznes__cards'>
@@ -230,7 +208,7 @@ return () => {
                         </div>
                     </div>
                 </div>
-                 <div className='biznes__bottom'>
+                <div className='biznes__bottom'>
                     <div>
                         <div className='biznes__box'>
                             <div className='biznes__box__img'>
@@ -387,61 +365,61 @@ return () => {
                         </div>
                     </div>
                 </div>
-               <div className="helper">
+                <div className="helper">
                     <h2>Biz yordam bergan <span>bizneslar</span> </h2>
                     <div className="helper__cards">
                         <div>
-                           
-                        <div className="helper__cards__item">
-                            <img src={mobion} alt="" /> 
-                        </div>  
+
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
 
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                         <div>
-                        <div className="helper__cards__item">
-                          <img src={mobion} alt="" />
-                        </div>  
+                            <div className="helper__cards__item">
+                                <img src={mobion} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <Validate />
 
-                 <div className="aksiya">
+                <div className="aksiya">
                     <h2>Hoziroq ròyhatdan òting va sotuvni <span>3x</span>  ga oshiradigan maxsus <span>kitobga</span>  ega bo`ling</h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
-                        <span>{timerDays}</span>
+                            <span>{timerDays}</span>
                             <p>Kun</p>
                         </div>
                         <div className='aksiya__cards__item'>
@@ -457,25 +435,25 @@ return () => {
                             <p>Sekund</p>
                         </div>
                     </div>
-                   
+
                 </div>
                 <div>
-                <h2 className="aksiya__title">Faqat bu <span>taklif</span>  sizlar uchun</h2>
-                <div className="aksiya__bottom">
-                    <div className='aksiya__bottom__info'>
-                        <p>Xizmatlarimizdan foydalanish orqali yana ushbu narsalarga ega bòlasiz.</p>
-                        <ul>
-                            <li><div>1</div> Ma’lumot beruvchi bot</li>
-                            <li><div>2</div> Domen va hosting 1oylik</li>
-                            <li><div>3</div> Call center bot</li>
-                            <li><div>4</div> Hizmatlar uchun cashback</li>
-                            <li><div>5</div> Mahsus sovg’aga ega bo’lasiz </li>
-                        </ul>
+                    <h2 className="aksiya__title">Faqat bu <span>taklif</span>  sizlar uchun</h2>
+                    <div className="aksiya__bottom">
+                        <div className='aksiya__bottom__info'>
+                            <p>Xizmatlarimizdan foydalanish orqali yana ushbu narsalarga ega bòlasiz.</p>
+                            <ul>
+                                <li><div>1</div> Ma’lumot beruvchi bot</li>
+                                <li><div>2</div> Domen va hosting 1oylik</li>
+                                <li><div>3</div> Call center bot</li>
+                                <li><div>4</div> Hizmatlar uchun cashback</li>
+                                <li><div>5</div> Mahsus sovg’aga ega bo’lasiz </li>
+                            </ul>
+                        </div>
+                        <div className='aksiya__bottom__img'>
+                            <img src={aksiya} alt="" />
+                        </div>
                     </div>
-                    <div className='aksiya__bottom__img'>
-                        <img src={aksiya} alt="" />
-                    </div>
-                </div>
                 </div>
                 <Footer></Footer>
             </Container>

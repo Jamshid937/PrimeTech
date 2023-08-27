@@ -16,13 +16,27 @@ function NavBar() {
     i18n.changeLanguage(e.target.value)
   }
   const [click, setClick] = React.useState(false);
-  const [navBar] = React.useState(false)
+  const [navBar,setNavBar] = React.useState(false)
+  // const [navBar, setNavBar] = React.useState(false)
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
+
+  const ScrollBar =() => {
+    if(window.scrollY>=80){
+   setNavBar(true)
+   }else{
+    setNavBar(false)
+   }
+   }
+   window.addEventListener('scroll', ScrollBar)
+
   return (
     <div className="transparent">
     <div className='back'>
-    <div className={navBar ? 'navbar active' : 'navbar'}  >
+  
+         <div className={navBar ? 'navbar active' : 'navbar'}  >
+
+   
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">

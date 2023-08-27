@@ -7,7 +7,7 @@
     line-height: 150%;
     /* 120px */
     letter-spacing: -1.52px;
-    padding-top: 80px;
+    padding-top: 120px;
     max-width: 712px;
     width: 100%;
 }
@@ -511,93 +511,7 @@ justify-content: center;
     }
 }
 
-.shop__carusel__cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    overflow-x: scroll;
-}
 
-.shop__carusel__cards__item--back {
-    background-image: url('../../imgs/husan.png');
-}
-
-.shop__carusel__cards__item {
-    width: 350px;
-    height: 500px;
-    background-image: url('../../imgs/card.png');
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 11px;
-    padding-bottom: 40px;
-    padding-left: 15px;
-
-}
-
-.shop__carusel__cards__item>h4 {
-    color: #FFF;
-    font-family: 'Inter';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    /* 45px */
-    letter-spacing: -0.33px;
-}
-
-.shop__carusel__cards__item>p {
-    color: #FFF;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    /* 30px */
-    letter-spacing: -0.22px;
-}
-
-.shop__title {
-    color: #FFF;
-    font-family: 'Inter';
-    text-align: center;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -1.14px;
-    max-width: 890px;
-    width: 100%;
-    margin: 192px auto;
-}
-
-.shop__carusel__vektor {
-    display: flex;
-    justify-content: right;
-    gap: 59px;
-    margin-top: 53px;
-}
-
-/* shop media */
-
-@media screen and (max-width:749px) {
-    .shop__title {
-        font-size: 45px;
-    }
-}
-
-@media screen and (max-width:563px) {
-    .shop__title {
-        font-size: 34px;
-    }
-}
-
-@media screen and (max-width:424px) {
-    .shop__title {
-        font-size: 28px;
-    }
-}
 
 
 
