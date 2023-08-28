@@ -4,6 +4,10 @@ display: none;
 
 .collapse__text{
 display: none;
+background: #6289FF;
+color: #fff;
+padding: 8px;
+border-radius: 8px;
 }
 #check:checked ~ .collapse__text{
 display: block;
