@@ -234,9 +234,9 @@ justify-content: center;
     height: 200px;
 }
 
-.about>h2 {
+.about__title {
     color: #FFF;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
@@ -254,10 +254,21 @@ justify-content: center;
 }
 
 .about {
-    max-width: 1047px;
+
+}
+.about__box__info__container{
+    max-width: 1180px;
     width: 100%;
     padding: 0 15px;
+    border-radius: 10px;
     margin: 0 auto;
+    top: 133px;
+    /* left: 217px; */
+    
+}
+.about__box>video{
+width: 100%;
+margin-top: 49px;
 }
 
 .about__box__img>p {
@@ -265,16 +276,15 @@ justify-content: center;
     width: 100%;
     color: #FFF;
     font-family: 'Inter';
-    font-size: 27px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%;
-    /* 37.5px */
+    line-height: 150%; /* 37.5px */
     letter-spacing: -0.275px;
 }
 
 .about__box__info>p {
-    color: #333;
+    color: rgb(209, 206, 206);
     font-family: 'Inter';
     font-size: 18px;
     font-style: normal;
@@ -284,7 +294,9 @@ justify-content: center;
     letter-spacing: -0.165px;
     max-width: 448px;
     width: 100%;
-}
+} 
+
+
 
 .about__box__info {
     display: flex;
@@ -294,11 +306,14 @@ justify-content: center;
 }
 
 .about__box {
-    padding: 16px;
-    border-radius: 10px;
-    margin-top: 22px;
+position: relative;
 }
-
+.about__box>div{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
 .about__btn {
     padding: 21px 19px;
     text-decoration: none;
@@ -320,6 +335,11 @@ justify-content: center;
 }
 
 /* media about */
+@media screen and (max-width:857px) {
+    
+}
+
+
 @media screen and (max-width:700px) {
     .about__box__info {
         display: flex;
@@ -418,7 +438,7 @@ justify-content: center;
     line-height: 150%;
     /* 30px */
     letter-spacing: -0.22px;
-    max-width: 216px;
+    max-width: 275px;
     width: 100%;
     margin-top: 15px;
 }
@@ -433,7 +453,7 @@ justify-content: center;
     width: 100%;
 }
 
-.services__cards__item>button {
+.services__cards__item>label {
     color: #1551FF;
     text-align: center;
     font-family: 'Inter';

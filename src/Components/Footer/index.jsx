@@ -13,14 +13,14 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer__btn__box'>
-            <a href="#" className='about__btn'>Royhatdan otish</a>
+            <a href="#" className='about__btn'>Ro`yxatdan o`tish</a>
            </div>
 
         <div className='footer__location'>
           <img src={location} alt="" />
           <div>
              <p>Tsohkent shahar</p>
-             <p>Mirobod tumani NBU bank roparasi</p>
+             <p>Toshkent shahar ,Olmazor tumani ,Yangi Olmazor kòchasi,51</p>
           </div>
         </div>
         <div className="creator">

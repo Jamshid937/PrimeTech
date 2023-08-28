@@ -14,12 +14,12 @@ const Validate = () => {
       </div>
 
         <div>
-            <h2 className='validate__title'>Siz bilan bog’lanishimiz uchun <span>so’rovnoma</span>  ni toldiring</h2>
+            <h2 className='validate__title'>Siz bilan bog‘lanishimiz uchun <span>so’rovnomani</span> to‘ldiring</h2>
             <form className='validate__form'>
                  <input type="text" placeholder='Ismingiz'/>
-                 <input type="tel" name="" id="" placeholder='Telefoningiz'/>
+                 <input type="tel" name="" id="" placeholder='Telefon raqamingiz'/>
                  <input type="text" placeholder='Biznes faoliyatingiz'/>
-                 <input type="text" placeholder='Mammoingiz'/>
+                 <input type="text" placeholder='Muammoyingiz'/>
                  <button>Jo’natish</button>
             </form>
         </div>

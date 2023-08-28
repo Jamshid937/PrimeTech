@@ -1,0 +1,19 @@
+.services__cards__item>input{
+display: none;
+}
+
+.collapse__text{
+display: none;
+}
+#check:checked ~ .collapse__text{
+display: block;
+}
+#check1:checked ~ .collapse__text{
+    display: block;
+    }
+    #check2:checked ~ .collapse__text{
+        display: block;
+        }
+        #check3:checked ~ .collapse__text{
+            display: block;
+            }
