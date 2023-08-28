@@ -23,9 +23,10 @@ const Collapse = () => {
                     </p>
                     <section className='collapse__text'>
                         Web saytning biznesingizdagi foydalari quyidagilardan  iborat
+                        <br />
                         <br></br>
                         <span>1.</span> Onlayn ko'rsatish va marketing: Web saytni biznesingiz uchun bir marketing vositasi sifatida ishlatishingiz mumkin. Sayt orqali sizning mahsulotingiz yoki xizmatlaringiz haqida ma'lumot berishingiz, yangiliklarni tarqatishingiz va potensial mijozlarga reklama qilishingiz mumkin.
-                        <br></br>
+                        <br />
                         <span>2.</span> Oson kommunikatsiya: Web sayt orqali siz mijozlarga osonlik bilan aloqa o'rnatishingiz mumkin. Mijozlar sizning mahsulotingiz yoki xizmatlar haqida savollar yoki takliflar uchun veb-saytingizga murojaat qila oladilar va siz ham ularga tez va aniq javob berish imkoniyatini topasiz.
                         <br />
                         <span>3.</span> Mijoz tomonidan qidiruv: Potensial mijozlar internetda nima qidirayotganligini bilib, ularni mavjud bo'lgan hujjatlarga muvofiq topishadi. Agar sizning biznesingizning web sayti bo'lsa, bu potensial mijozlarning sizga yetib kelish imkoniyati ortadi.
