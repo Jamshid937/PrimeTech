@@ -59,7 +59,6 @@ const Collapse = () => {
                     </div>
                     <h4>Telegram bot</h4>
                     <p>Marketingni rivojlantiradigan bepul xodimga ega bo’lasiz.
-                        Yana to’liq ma’luot uchun.
                     </p>
 
                     <section className='collapse__text'>
