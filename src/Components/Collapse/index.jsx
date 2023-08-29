@@ -11,7 +11,6 @@ const Collapse = () => {
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
 
     return (
-    
     <>
         <div className='services'>
             <Container>
