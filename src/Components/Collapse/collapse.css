@@ -59,3 +59,11 @@ background-color: #1551FF;
         background-repeat: no-repeat;
         background-image: url('../../imgs/settingsBack.png');
     }
+
+    @media screen and (max-width:697px) {
+    .services__back{
+    background-image: none;
+    background-color: #fff;
+    }
+    
+    }

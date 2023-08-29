@@ -838,7 +838,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    /* 90px */
     letter-spacing: -1.14px;
     max-width: 811px;
     width: 100%;
@@ -865,7 +864,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    /* 30px */
+
     letter-spacing: -0.22px;
 }
 
