@@ -9,7 +9,6 @@ import Container from '../../layout/Container'
 const Collapse = () => {
     const [isExpanded, setExpanded] = useState(false)
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
-
     return (
     <>
         <div className='services'>
