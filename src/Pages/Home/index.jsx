@@ -4,7 +4,9 @@ import NavBar from '../../Components/NavBar/NavBar'
 import Container from '../../layout/Container'
 import Validate from '../../Components/Validate'
 import Footer from '../../Components/Footer'
-
+import SwiperTwo from '../../Components/SwiperTwo';
+import Collapse from '../../Components/Collapse';
+import SwiperCard from '../../Components/Swiper/inddex';
 import gift from '../../imgs/Gift.png'
 import who from '../../imgs/mechanical.png'
 import increase from '../../imgs/increase.png'
@@ -23,10 +25,13 @@ import bek from '../../imgs/bek.png'
 import gesso from '../../imgs/gesso.png'
 import aminows from '../../imgs/aminows.png'
 import video from '../../imgs/PrimeTech.mp4'
-import SwiperCard from '../../Components/Swiper/inddex';
+import husanM from '../../imgs/husanM.png'
+import shokirov from '../../imgs/Shokirov.png'
+import Eshonqulov from '../../imgs/Eshonqulov.png'
+import bekzod from '../../imgs/bekzod.png'
+
 import './Home.css'
-import SwiperTwo from '../../Components/SwiperTwo';
-import Collapse from '../../Components/Collapse';
+
 const Home = () => {
     const { t, i18n } = useTranslation();
     const [timerDays, setTimerDays] = useState('00')
@@ -90,7 +95,7 @@ const Home = () => {
                     </ul>
                 </div>
                 <div className='who'>
-                    <h2 className='who__title'>PrimeTech <span>IT</span>  kompaniyasi xizmatlari kimlar uchun?</h2>
+                    <h2 className='who__title'>PrimeTech IT kompaniyasi xizmatlari kimlar uchun?</h2>
                     <div className='who__cards'>
                         <div className='who__cards__item'>
                             <img src={who} alt="" />
@@ -121,7 +126,7 @@ const Home = () => {
             </Container>
             <div className='about'>
                 <Container>
-                    <h2 className='about__title'><span>PrimeTech</span>qanday kompaniya?</h2>
+                    <h2 className='about__title'>PrimeTech qanday kompaniya?</h2>
                 </Container>
                 <div className='about__box'>
                     <video src={video} autoPlay loop muted></video>
@@ -146,11 +151,13 @@ const Home = () => {
                 </div>
             </Container>
             </div>
-            <Container>
+
+            
                 <Collapse />
+               <Container> 
                 <SwiperCard></SwiperCard>
                 <div className='biznes'>
-                    <h2 className='biznes__title'> <span>Biznes</span> va <span> IT </span> birga bog’laymiz</h2>
+                    <h2 className='biznes__title'> Biznes va  IT  birga bog’laymiz</h2>
                     <p>Tadbirkorlarning biznesini avtomatlashtirish orqali biznesni bir bosqichdan ikkinchi bosqichga olib chiqishga hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
                     <div className='biznes__cards'>
                         <div className='biznes__cards__item'>
@@ -212,12 +219,58 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='comments'>
-                    <h2>Buning isbotini <span>tadbirkorlarni</span>  fikridan bilib oling</h2>
+                    <h2>Buning isbotini  tadbirkorlarni fikridan bilib oling</h2>
                     <div className='comments__cards'>
                         <div className='comments__cards__item'>
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
+                                    <img src={husanM} alt="" />
+                                </div>
+                            </div>
+
+                            <h4>Husan mamasaidov</h4>
+                            <p>Decos,Mfaktor</p>
+                            <div className='comments__cards__info'>
+                                <div className='comments__cards__info__text'>
+                                    <p>Soxa</p>
+                                    <p>Shahar</p>
+                                </div>
+                                <div className='comments__cards__info__text'>
+                                    <p>IT</p>
+                                    <p>Toshkent</p>
+                                </div>
+                            </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
+                            </div>
+                        </div>
+                        <div className='comments__cards__item'>
+                            <div className='comments__cards__img__back'>
+                                <div className='comments__cards__img'>
+                                    <img src={shokirov} alt="" />
+                                </div>
+                            </div>
+
+                            <h4>Husan mamasaidov</h4>
+                            <p>Decos,Mfaktor</p>
+                            <div className='comments__cards__info'>
+                                <div className='comments__cards__info__text'>
+                                    <p>Soxa</p>
+                                    <p>Shahar</p>
+                                </div>
+                                <div className='comments__cards__info__text'>
+                                    <p>IT</p>
+                                    <p>Toshkent</p>
+                                </div>
+                            </div>
+                            <div className='comments__cards__btn'>
+                                <a href="">Fikrlar</a>
+                            </div>
+                        </div>
+                        <div className='comments__cards__item'>
+                            <div className='comments__cards__img__back'>
+                                <div className='comments__cards__img'>
+                                    <img src={Eshonqulov} alt="" />
                                 </div>
                             </div>
 
@@ -263,53 +316,7 @@ const Home = () => {
                         <div className='comments__cards__item'>
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
-                                </div>
-                            </div>
-
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
-                            <div className='comments__cards__info'>
-                                <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
-                                </div>
-                                <div className='comments__cards__info__text'>
-                                    <p>IT</p>
-                                    <p>Toshkent</p>
-                                </div>
-                            </div>
-                            <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
-                            </div>
-                        </div>
-                        <div className='comments__cards__item'>
-                            <div className='comments__cards__img__back'>
-                                <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
-                                </div>
-                            </div>
-
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
-                            <div className='comments__cards__info'>
-                                <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
-                                </div>
-                                <div className='comments__cards__info__text'>
-                                    <p>IT</p>
-                                    <p>Toshkent</p>
-                                </div>
-                            </div>
-                            <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
-                            </div>
-                        </div>
-                        <div className='comments__cards__item'>
-                            <div className='comments__cards__img__back'>
-                                <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
+                                    <img src={bekzod} alt="" />
                                 </div>
                             </div>
 
@@ -356,7 +363,7 @@ const Home = () => {
                 </div>
                 <SwiperTwo />
                 <div className="helper">
-                    <h2>Biz yordam bergan <span>bizneslar</span> </h2>
+                    <h2>Biz yordam bergan bizneslar </h2>
                     <div className="helper__cards">
                         <div>
 
@@ -405,7 +412,7 @@ const Home = () => {
                 <Validate />
 
                 <div className="aksiya">
-                    <h2>Hoziroq ro‘yxatdan o‘ting va sotuvn <span>3x</span>  ga oshiradigan  <span>kitobga</span>  ega bo‘ling! </h2>
+                    <h2>Hoziroq ro‘yxatdan o‘ting va sotuvn 3x  ga oshiradigan  kitobga  ega bo‘ling! </h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
@@ -428,7 +435,7 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <h2 className="aksiya__title">Bu <span>taklif</span> faqat sizlar uchun</h2>
+                    <h2 className="aksiya__title">Bu taklif faqat sizlar uchun</h2>
                     <div className="aksiya__bottom">
                         <div className='aksiya__bottom__info'>
                             <p>Xizmatimizdan foydalanish orqali Siz yana quyidagilarga ega bo‘lasiz:</p>

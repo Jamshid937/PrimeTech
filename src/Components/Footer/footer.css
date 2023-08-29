@@ -15,6 +15,14 @@
     font-weight: 400;
     line-height: normal;
 }
+.footer__location>img{
+width: 40px;
+height: 40px;
+}
+.footer__location>div{
+max-width: 190px;
+width: 100%;
+}
 .footer__location{
 display: flex;
 gap: 40px;
@@ -24,7 +32,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 gap: 20px;
-border-top: 2px solid #000F3D;
+border-top: 2px solid #FFF;
 margin-top: 30px;
 padding-top: 20px;
 flex-wrap: wrap;
@@ -36,6 +44,7 @@ gap: 15px;
 align-items: center;
 padding-left: 10px;
 border-radius: 10px;
+padding: 7px 10px;
 }
 .creator>p{
     color: #FFF;
@@ -46,11 +55,8 @@ border-radius: 10px;
     line-height: normal;
 }
 .creator>img{
-    width: 53.631px;
-    height: 50px;
-}
-.footer__btn__box{
-
+width: 53px;
+height: 50px;
 }
 @media screen and (max-width:768px) {
     .footer{

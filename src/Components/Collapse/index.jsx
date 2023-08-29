@@ -5,13 +5,19 @@ import bot from '../../imgs/bot.png'
 import internet from '../../imgs/internet.png'
 import crm from '../../imgs/crm.png'
 import './collapse.css'
+import Container from '../../layout/Container'
 const Collapse = () => {
     const [isExpanded, setExpanded] = useState(false)
     const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
 
     return (
+    
+    <>
         <div className='services'>
-            <h2 className='services__title'> <span>Xizmatlarimizdan</span>foydalanish orqali siz nimalarga ega bo`lasiz?</h2>
+            <Container>
+            <h2 className='services__title'>Xizmatlarimizdanfoydalanish orqali siz nimalarga ega bo`lasiz?</h2>
+            </Container>
+       <div className='services__back'>     
             <div className='services__cards'>
                 <div className='services__cards__item'>
                     <input type="checkbox" name="" id='check' />
@@ -128,6 +134,10 @@ const Collapse = () => {
                 </div> 
             </div>
         </div>
+  
+    </div>
+      </>
+
     )
 }
 

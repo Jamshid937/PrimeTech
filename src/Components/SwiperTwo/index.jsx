@@ -3,6 +3,7 @@ import right from '../../imgs/right.png'
 import left from '../../imgs/left.png'
 import quote from '../../imgs/quote.png'
 import akbarshoh from '../../imgs/akbarshoh.png'
+import quoteWhite from '../../imgs/quoteWhite.png'
 import './SwiperTwo.css'
 const SwiperTwo = () => {
     const scrollLeft = () => {
@@ -14,7 +15,7 @@ const SwiperTwo = () => {
 
     return (
         <div className='comments__bottom'>
-            <h2>Bizning <span>mamnun</span>  mijozlarimiz fikrlari</h2>
+            <h2>Bizning mamnun  mijozlarimiz fikrlari</h2>
             <div className='comments__carusel'>
                 <div className='comments__carusel__cards' id='comment'>
                     <div className='comments__carusel__cards__item'>
@@ -32,6 +33,7 @@ const SwiperTwo = () => {
                         </div>
                         <div className='comments__carusel__cards__item--quote'>
                             <img src={quote} alt="" />
+                            <img src={quoteWhite} alt="" />
                         </div>
                     </div>
                     <div className='comments__carusel__cards__item'>
@@ -49,6 +51,7 @@ const SwiperTwo = () => {
                         </div>
                         <div className='comments__carusel__cards__item--quote'>
                             <img src={quote} alt="" />
+                            <img src={quoteWhite} alt="" />
                         </div>
                     </div>
                     <div className='comments__carusel__cards__item'>
@@ -66,6 +69,7 @@ const SwiperTwo = () => {
                         </div>
                         <div className='comments__carusel__cards__item--quote'>
                             <img src={quote} alt="" />
+                            <img src={quoteWhite} alt="" />
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ list-style: none;
 
 
 .comments__carusel__cards__item__info__header--text :first-child{
-    color: #000F3D;
+    color: #FFF;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -44,7 +44,7 @@ list-style: none;
 }
 
 .comments__carusel__cards__item__info__header--text :last-child{
-    color: #333;
+    color: #D2D2D2;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -56,7 +56,7 @@ display: flex;
 gap: 16px;
 }
 .comments__carusel__cards__item__info--p{
-    color: #333;
+    color: #FFF;
     font-family: 'Inter';
     font-size: 15px;
     font-style: normal;
@@ -80,4 +80,25 @@ gap: 47px;
 .comments__carusel__vektor>button{
     background: none;
     border: none;
+}
+.comments__carusel__cards__item--quote :last-child{
+display: none;
+}
+.comments__carusel__cards__item:hover{
+background-color: #1551FF;
+}
+.comments__carusel__cards__item:hover .comments__carusel__cards__item__info__header--text :first-child{
+color: #000F3D;
+}
+.comments__carusel__cards__item:hover .comments__carusel__cards__item__info__header--text :last-child{
+color: #B1C5FF;
+}
+.comments__carusel__cards__item:hover .comments__carusel__cards__item__info--p{
+color: #FFF;
+}
+.comments__carusel__cards__item:hover .comments__carusel__cards__item--quote :first-child{
+ display: none;
+}
+.comments__carusel__cards__item:hover .comments__carusel__cards__item--quote :last-child{
+display: block;
 }

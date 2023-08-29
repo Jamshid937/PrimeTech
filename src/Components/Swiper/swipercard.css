@@ -12,6 +12,18 @@
 .shop__carusel__cards__item--back {
     background-image: url('../../imgs/husan.png');
 }
+.shop__carusel__cards__item--back1 {
+    background-image: url('../../imgs/Xayrulla.png');
+    background-repeat:no-repeat;
+}
+.shop__carusel__cards__item--back2 {
+    background-image: url('../../imgs/abbos.png');
+    background-repeat:no-repeat;
+}
+.shop__carusel__cards__item--back3{
+    background-image: url('../../imgs/husan.png');
+    background-repeat:no-repeat;
+}
 
 .shop__carusel__cards__item {
     width: 350px;
@@ -24,7 +36,6 @@
     gap: 11px;
     padding-bottom: 40px;
     padding-left: 15px;
-
 }
 
 .shop__carusel__cards__item>h4 {

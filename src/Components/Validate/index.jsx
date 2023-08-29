@@ -14,7 +14,7 @@ const Validate = () => {
       </div>
 
         <div>
-            <h2 className='validate__title'>Siz bilan bog‘lanishimiz uchun <span>so’rovnomani</span> to‘ldiring</h2>
+            <h2 className='validate__title'>Siz bilan bog‘lanishimiz uchun so’rovnomani to‘ldiring</h2>
             <form className='validate__form'>
                  <input type="text" placeholder='Ismingiz'/>
                  <input type="tel" name="" id="" placeholder='Telefon raqamingiz'/>
