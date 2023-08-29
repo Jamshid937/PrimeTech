@@ -102,3 +102,13 @@ color: #FFF;
 .comments__carusel__cards__item:hover .comments__carusel__cards__item--quote :last-child{
 display: block;
 }
+@media screen and (max-width:543px) {
+    .comments__bottom>h2{
+    font-size: 42px;
+    }
+}
+@media screen and (max-width:382px) {
+    .comments__bottom>h2{
+    font-size: 35px;
+    }
+}
