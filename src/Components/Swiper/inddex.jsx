@@ -8,10 +8,10 @@ import './swipercard.css'
 const SwiperCard = () => {
     const { t, i18n } = useTranslation();
 const scrollLeft = () => {
-    document.getElementById('content').scrollLeft -= 350;
+    document.getElementById('content').scrollLeft -= 370;
 }
 const scrollRight = () => {
-document.getElementById('content').scrollLeft += 350;
+document.getElementById('content').scrollLeft += 370;
 }
   return (
     <div className='shop'>
@@ -26,7 +26,7 @@ document.getElementById('content').scrollLeft += 350;
             </div>
             <div className='shop__carusel__cards__item--back1'>
                 <div className='shop__carusel__cards__item'>
-                    <h4>Kamaldinov Beknazar</h4>
+                    <h4>Kamaldinov <br /> Beknazar</h4>
                     <p>{t('p10')}</p>
                 </div>
             </div>

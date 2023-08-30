@@ -63,8 +63,9 @@ width: 107px;
 height: 100px;
 }
 .creator__text{
-max-width: 190px;
+max-width: 280px;
 width: 100%;
+text-align: center;
 }
 .creator__text>p{
     color: #FFF;
