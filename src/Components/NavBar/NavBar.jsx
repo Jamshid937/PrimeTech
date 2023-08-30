@@ -81,7 +81,7 @@ function NavBar() {
     <Container>
       <div className='header__hero'>
         <h1 className='header__hero__title'>
-          Biz bilan <span>Biznes</span>  va <span>IT</span>  ni birga bog’lang
+        {t('p27')} <span>{t('sapn7')}</span>  {t('p28')} <span>{t('sapn8')}</span>  {t('p29')}
         </h1>
       <a href="#validate" className='header__hero__btn'>{t('btn')}</a>
         <div className='header__hero__gift'>

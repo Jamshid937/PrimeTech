@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import right from '../../imgs/right.png'
 import left from '../../imgs/left.png'
 import quote from '../../imgs/quote.png'
@@ -8,6 +9,7 @@ import beknazar from '../../imgs/beknazar.jpg'
 import quoteWhite from '../../imgs/quoteWhite.png'
 import './SwiperTwo.css'
 const SwiperTwo = () => {
+    const { t, i18n } = useTranslation();
     const scrollLeft = () => {
         document.getElementById('comment').scrollLeft -= 800;
     }
@@ -17,7 +19,7 @@ const SwiperTwo = () => {
 
     return (
         <div className='comments__bottom'>
-            <h2>Bizning mamnun  mijozlarimiz fikrlari</h2>
+            <h2>{t('h9')}</h2>
             <div className='comments__carusel'>
                 <div className='comments__carusel__cards' id='comment'>
                     <div className='comments__carusel__cards__item'>
@@ -26,11 +28,11 @@ const SwiperTwo = () => {
                                 <li className='comments__carusel__cards__item__info__header--img'><img src={zafar} alt="" /></li>
                                 <li className='comments__carusel__cards__item__info__header--text'>
                                     <p>A.Zafar </p>
-                                    <p> Telefon dòkon</p>
+                                    <p>{t('p11')}</p>
                                 </li>
                             </ul>
                             <p className='comments__carusel__cards__item__info--p'>
-                            Assalom alaykum, men Ashrapov Zafar "Mobion" telefon do‘koni asoschisiman. Shu paytgacha barcha ishimni o‘zim qilar edim. Mijozlar bilan gaplashish ko‘p vaqtimni olar edi. Shu kabi muommalar yuzasidan "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga 24/7 ma'lumot bera olaman. Ishlaringiz menga yoqdi. Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                            {t('p20')}
                             </p>
                         </div>
                         <div className='comments__carusel__cards__item--quote'>
@@ -44,12 +46,11 @@ const SwiperTwo = () => {
                                 <li className='comments__carusel__cards__item__info__header--img'><img src={bekzod} alt="" /></li>
                                 <li className='comments__carusel__cards__item__info__header--text'>
                                     <p>H.Behzod </p>
-                                    <p>Ishlab chiqarish</p>
+                                    <p>{t('p14')}</p>
                                 </li>
                             </ul>
                             <p className='comments__carusel__cards__item__info--p'>
-                            Assalom alaykum, mening ismim Behzod. "3d panel" dòkoni asoschisiman. Brendim uchun sayt qildirmoqchi edim. Chunki reklama ozroq  sifatsiz bo‘lyotgan edi. Shu kabi muommalar yuzasidan "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga 24/7 ma'lumot bera olyapman hamda target sifati sezilarli darajada oshgan. 
-Ishlaringiz menga yoqdi. Boshqa tadbirkorlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                            {t('p21')}
                             </p>
                         </div>
                         <div className='comments__carusel__cards__item--quote'>
@@ -63,11 +64,11 @@ Ishlaringiz menga yoqdi. Boshqa tadbirkorlarga ham "PrimeTech" IT kompaniyasini 
                                 <li className='comments__carusel__cards__item__info__header--img'><img src={beknazar} alt="" /></li>
                                 <li className='comments__carusel__cards__item__info__header--text'>
                                     <p>K.Beknazar </p>
-                                    <p>Sayohat</p>
+                                    <p>{t('p10')}</p>
                                 </li>
                             </ul>
                             <p className='comments__carusel__cards__item__info--p'>
-                            Assalomu alaykum, men Kamaldinov Beknazar "In cruiser travel" kompaniyasi menejeriman. Bizda mijoz bo‘yicha muammolarimiz bor edi. Shu sababdan, "PrimeTech" IT kompaniyasiga murojaat qildik. Ular bizga veb-sayt tayyorlab berishdi. Hozirda sayt yordamida target sifati oshgan va biz o‘z potinsial mijozlarimizga ega bo‘lyapmiz. Biznes bilan shug‘ullanuvchilarga tavsiyam Siz ham hoziroq "PrimeTech"  IT kompaniyasiga murojaat qiling va biznesdagi muammolaringizga yechim toping! PrimeTech zo‘r!
+                            {t('p22')}
                             </p>
                         </div>
                         <div className='comments__carusel__cards__item--quote'>

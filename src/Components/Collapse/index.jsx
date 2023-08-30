@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next';
 import booking from '../../imgs/booking.png'
 import bot from '../../imgs/bot.png'
 import internet from '../../imgs/internet.png'
@@ -7,12 +7,12 @@ import crm from '../../imgs/crm.png'
 import './collapse.css'
 import Container from '../../layout/Container'
 const Collapse = () => {
-
+    const { t, i18n } = useTranslation();
     return (
     <>
         <div className='services'>
             <Container>
-            <h2 className='services__title'>Xizmatlarimizdanfoydalanish orqali siz nimalarga ega bo`lasiz?</h2>
+            <h2 className='services__title'>{t('h4')}</h2>
             </Container>
        <div className='services__back'>     
             <div className='services__cards'>
@@ -21,8 +21,8 @@ const Collapse = () => {
                     <div className='services__cards__item--img'>
                         <img src={internet} alt="" />
                     </div>
-                    <h4>Veb sayt</h4>
-                    <p>Siz veb-sayt orqali doimiy potinsial mijozlarga ega bo’lasiz.</p>
+                    <h4>{t('h18')}</h4>
+                    <p>{t('p5')}</p>
                     
                     <section className='collapse__text'>
                         Web saytning biznesingizdagi foydalari quyidagilardan  iborat
@@ -47,7 +47,7 @@ const Collapse = () => {
                         Bular faqat bir nechta web saytning biznesdagi foydalari hisoblanadi va boshqa foydalarni ham o'z ichiga oladi. Web saytni biznesingizga qo'shishni ko'rishning va o'zining foydalarningi tahlil qilishning asosiy yo'llaridan biri, sizning maxsus biznesingizga qarab asoslangan bo'ladi.
                     </section>
                     <label for='check'>
-                      Batafsil
+                    {t('btn3')}
                     </label>
                     
                 </div>
@@ -56,8 +56,8 @@ const Collapse = () => {
                     <div className='services__cards__item--img'>
                         <img src={bot} alt="" />
                     </div>
-                    <h4>Telegram bot</h4>
-                    <p>Marketingni rivojlantiradigan bepul xodimga ega bo’lasiz.
+                    <h4>{t('h19')}</h4>
+                    <p>{t('p6')}
                     </p>
 
                     <section className='collapse__text'>
@@ -76,7 +76,7 @@ const Collapse = () => {
                         <span>6.</span>Telegram botlarining biznesdagi foydalari bu kutilgan bo'lmagan, chunki ular sizga tezkor javob berish, mijozlarga doimiy aloqada bo'lish va avtomatlashtirish imkonini beradi. Bu esa sizning biznesingizni kuchaytirish va mijozlaringiz bilan yaqindan aloqada turish imkonini beradi.
                     </section>
                     <label for='check1'>
-                      Batafsil
+                    {t('btn3')}
                     </label>
                 </div>
                 <div className='services__cards__item'>
@@ -84,8 +84,8 @@ const Collapse = () => {
                     <div className='services__cards__item--img'>
                         <img src={crm} alt="" />
                     </div>
-                    <h4>CRM</h4>
-                    <p>Kompaniyangiz ichki tizimini to’liq avtomatlashtirasiz.
+                    <h4>{t('h20')}</h4>
+                    <p>{t('p7')}
                     </p>
                     <section className='collapse__text'>
                         Web saytning biznesingizdagi foydalari quyidagilardan  iborat
@@ -102,7 +102,7 @@ const Collapse = () => {
                         
                     </section>
                     <label for='check2'>
-                      Batafsil
+                    {t('btn3')}
                     </label>
                 </div>
                 <div className='services__cards__item'>
@@ -110,8 +110,8 @@ const Collapse = () => {
                     <div className='services__cards__item--img'>
                         <img src={booking} alt="" />
                     </div>
-                    <h4>Mobile ilova</h4>
-                    <p>Hamma ishlaringizni bir joyda jamlaysiz.</p>
+                    <h4>{t('h21')}</h4>
+                    <p>{t('p8')}</p>
                     
                     <section className='collapse__text'>
                     Mobile ilovaning biznesdagi foydalari quvidagilardan iborat
@@ -125,7 +125,7 @@ const Collapse = () => {
                         <span>4.</span>  Xizmat ko'rsatishni yaxshilash: Mobil ilovalar orqali kompaniya sotuvchilari mijozlarga yetkazib berishni tezkorlashtiradi. Bu, mijozlarga
                     </section>
                     <label for='check3'>
-                      Batafsil
+                    {t('btn3')}
                     </label>
                 </div> 
             </div>

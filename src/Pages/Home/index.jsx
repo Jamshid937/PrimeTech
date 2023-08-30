@@ -80,44 +80,44 @@ const Home = () => {
                 <div className='header__hero__bottom'>
                     <ul className='header__hero__bottom-box'>
                         <li className='header__hero__bottom-box__item'>
-                            <span>+36ta</span>
-                            <p>Tadbirkorlarga IT orqali biznesidagi muommasiga yechim berilgan.</p>
+                            <span>{t('sapn')}</span>
+                            <p>{t('p2')}</p>
                         </li>
                         <li className='header__hero__bottom-box__item'>
-                            <span>90NPS</span>
-                            <p>Kerakli dasturiy ta’minot orqali xarajatlaringizni 25%gacha kamaytirasiz.</p>
+                            <span>{t('sapn1')}</span>
+                            <p>{t('p3')}</p>
                         </li>
                         <li className='header__hero__bottom-box__item'>
-                            <span>4Yil</span>
-                            <p>Shu vaqt davomida tadbirkorlarimiz bilan ishlab kelmoqdamiz.</p>
+                            <span>{t('sapn2')}</span>
+                            <p>{t('p4')}</p>
                         </li>
                     </ul>
                 </div>
                 <div className='who'>
-                    <h2 className='who__title'>PrimeTech IT kompaniyasi xizmatlari kimlar uchun?</h2>
+                    <h2 className='who__title'>{t('h2')}</h2>
                     <div className='who__cards'>
                         <div className='who__cards__item'>
                             <img src={who} alt="" />
-                            <h4>Biznesni tizimlashtirmoqchi bo’lganlar uchun</h4>
+                            <h4>{t('h15')}</h4>
                             <ul>
-                                <li>Hodimlar ozlariga berilayotgan vazifani bajarmayaptimi</li>
-                                <li>Jamoani boshqarishda muammo bormi?</li>
+                                <li>{t('li9')}</li>
+                                <li>{t('li10')}</li>
                             </ul>
                         </div>
                         <div className='who__cards__item'>
                             <img src={increase} alt="" />
-                            <h4>Biznesni kengaytirmoqchi bo’lganlar uchun</h4>
+                            <h4>{t('h16')}</h4>
                             <ul>
-                                <li>Molya bo’limidagi raqamlarni hisoblay olmayapsizmi?</li>
-                                <li>Biznesni kengaytirmoqchisiz, lekin hodimlar tayyor emasmi?</li>
+                                <li>{t('li11')}</li>
+                                <li>{t('li12')}</li>
                             </ul>
                         </div>
                         <div className='who__cards__item'>
                             <img src={warning} alt="" />
-                            <h4>Sotuv va mijozlar bilan muammosi borlar uchun</h4>
+                            <h4>{t('h17')}</h4>
                             <ul>
-                                <li>Sotuv bo’yicha amalga oshirilishi kerak bo’lgan  rejalar bajarilmayaptimi?</li>
-                                <li>Nasiyalaringiz ko’payib ketyaptimi?</li>
+                                <li>{t('li13')}</li>
+                                <li>{t('li14')}</li>
                             </ul>
                         </div>
                     </div>
@@ -125,14 +125,14 @@ const Home = () => {
             </Container>
             <div className='about'>
                 <Container>
-                    <h2 className='about__title'>PrimeTech qanday kompaniya?</h2>
+                    <h2 className='about__title'>{t('h3')}</h2>
                 </Container>
                 <div className='about__box'>
                     <video src={video} autoPlay loop muted></video>
                 </div>
                 <Container>
                 <div className='about__btn__box'>
-                    <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
+                    <a href="#validate" className='about__btn'>{t('btn')}</a>
                 </div>
             </Container>
             </div>
@@ -142,27 +142,27 @@ const Home = () => {
                <Container> 
                 <SwiperCard></SwiperCard>
                 <div className='biznes'>
-                    <h2 className='biznes__title'> Biznes va  IT  birga bog’laymiz</h2>
-                    <p>Tadbirkorlarning biznesini avtomatlashtirish orqali biznesni bir bosqichdan ikkinchi bosqichga olib chiqishga hamda muvaffaqiyatli biznes qurishga yordam beramiz.</p>
+                    <h2 className='biznes__title'> {t('h6')}</h2>
+                    <p>{t('p15')}</p>
                     <div className='biznes__cards'>
                         <div className='biznes__cards__item'>
-                            <p>Web sayt orqali daromadni oshirish</p>
+                            <p>{t('li')}</p>
                             <div>+</div>
                         </div>
                         <div className='biznes__cards__item'>
-                            <p>CRM orqali kompaniyani tizimlashtirish</p>
+                            <p>{t('li1')}</p>
                             <div>+</div>
                         </div>
                         <div className='biznes__cards__item'>
-                            <p>Mobile app va telegram botda foydalanish</p>
+                            <p>{t('li2')}</p>
                             <div>+</div>
                         </div>
                         <div className='biznes__cards__item'>
-                            <p>Marketingni IT da qo’llash</p>
+                            <p>{t('li3')}</p>
                             <div>+</div>
                         </div>
                         <div className='biznes__cards__item'>
-                            <p>IT orqali sotuvni 25% ga oshirish</p>
+                            <p>{t('li4')}</p>
                             <div>+</div>
                         </div>
                     </div>
@@ -172,11 +172,11 @@ const Home = () => {
                         <div className='biznes__box'>
                             <div className='biznes__box__img'>
                                 <a href="#" className='about__box__logo'><img src={mainLogo} alt="" /></a>
-                                <p>Biznesingiz bilan IT birga bog’lang.</p>
+                                <p>{t('p16')}</p>
                             </div>
                         </div>
                         <div className='about__btn__box'>
-                            <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
+                            <a href="#validate" className='about__btn'>{t('btn')}</a>
                         </div>
                         <div className='biznes__bottom--gift'>
                             <img src={gift} alt="" />
@@ -184,27 +184,27 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='biznes__bottom__info'>
-                        <h4>Xizmatlarimizdan foydalangandan sòng ushbu natijalarga erishasiz.</h4>
+                        <h4>{t('h7')}</h4>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Sayt orqali samarali reklama berishni</p>
+                            <p>{t('li5')}</p>
                         </div>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>CRM orqali kompaniya ichki tizimini qurishni</p>
+                            <p>{t('li6')}</p>
                         </div>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Telegram bot orqali marketingni rivojlantirishni</p>
+                            <p>{t('li7')}</p>
                         </div>
                         <div className='biznes__bottom__info__text'>
                             <img src={check} alt="" />
-                            <p>Mobil ilova orqali umumiy ma’lumotlaringizni bir joyga jamlashga</p>
+                            <p>{t('li8')}</p>
                         </div>
                     </div>
                 </div>
                 <div className='comments'>
-                    <h2>Buning isbotini  tadbirkorlarni fikridan bilib oling</h2>
+                    <h2>{t('h8')}</h2>
                     <div className='comments__cards'>
                         <div className='comments__cards__item'>
                         <input type="checkbox" name="" id='checkComments' />
@@ -215,24 +215,24 @@ const Home = () => {
                             </div>
 
                             <h4> Bakirova Dilafro‘z</h4>
-                            <p>Shifokor</p>
+                            <p>{t('p9')}</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                    <p>{t('p18')}</p>
+                                    <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>Shifokor</p>
+                                    <p>{t('p9')}</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                {t('p24')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments'>Fikrlar</label>
+                                <label for='checkComments'>{t('btn2')}</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -244,24 +244,26 @@ const Home = () => {
                             </div>
 
                             <h4>Kamaldinov Beknazar</h4>
-                            <p>Sayohat</p>
+                            <p>
+                                {t('p10')}
+                            </p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                <p>{t('p18')}</p>
+                                <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>Sayohat</p>
+                                    <p>{t('p10')}</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalomu alaykum, men Kamaldinov Beknazar "In cruiser travel" kompaniyasi menejeriman. Bizda mijoz bo‘yicha muammolarimiz bor edi. Shu sababdan, "PrimeTech" IT kompaniyasiga murojaat qildik. Ular bizga veb-sayt tayyorlab berishdi. Hozirda sayt yordamida target sifati oshgan va biz o‘z potinsial mijozlarimizga ega bo‘lyapmiz. Biznes bilan shug‘ullanuvchilarga tavsiyam Siz ham hoziroq "PrimeTech"  IT kompaniyasiga murojaat qiling va biznesdagi muammolaringizga yechim toping! PrimeTech zo‘r!
+                                {t('p22')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments1'>Fikrlar</label>
+                                <label for='checkComments1'>{t('btn2')}</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -273,24 +275,24 @@ const Home = () => {
                             </div>
 
                             <h4> Ashrapov Zafar</h4>
-                            <p>Telefon dòkon</p>
+                            <p>{t('p11')}</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                <p>{t('p18')}</p>
+                                <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>Telefon dòkon</p>
+                                    <p>{t('p11')}</p>
                                     <p>Samarqand</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalom alaykum, men Ashrapov Zafar "Mobion" telefon do‘koni asoschisiman. Shu paytgacha barcha ishimni o‘zim qilar edim. Mijozlar bilan gaplashish ko‘p vaqtimni olar edi. Shu kabi muommalar yuzasidan "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga 24/7 ma'lumot bera olaman. Ishlaringiz menga yoqdi. Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                                {t('p20')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments2'>Fikrlar</label>
+                                <label for='checkComments2'>{t('btn2')}</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -302,25 +304,24 @@ const Home = () => {
                             </div>
 
                             <h4>Sadriddin Dehkonov</h4>
-                            <p>Gòsht mahsulotlari</p>
+                            <p>{t('p12')}</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                    <p>{t('p18')}</p>
+                                    <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>Gòsht mahsulotlari</p>
+                                    <p>{t('p12')}</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalom alaykum, mening ismim Sadriddin. "Al-Lahm" do‘koni asoschisiman. Shu paytgacha barcha ishimni o‘zim qilar edim. Mijozlarimga bir vaqtning o‘zida hamma mahsulotim haqida ma'lumot berish muomma edi. Shu kabi muommalar yuzasida "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga oldingidan tezroq ma'lumot bera olaman.
-Ishlaringiz menga yoqdi.Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                                    {t('p25')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments3'>Fikrlar</label>
+                                <label for='checkComments3'> {t('btn2')} </label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
@@ -332,24 +333,24 @@ Ishlaringiz menga yoqdi.Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini t
                             </div>
 
                             <h4>Behzod Haldarov</h4>
-                            <p>Ishlab chiqarish</p>
+                            <p>{t('p14')}</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                <p>{t('p18')}</p>
+                                    <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>Ishlab chiqarish</p>
+                                    <p>{t('p14')}</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                 {t('p21')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments4'>Fikrlar</label>
+                                <label for='checkComments4'>{t('btn2')}</label>
                             </div>
                         </div>
                     <div className='comments__cards__item'>
@@ -361,31 +362,31 @@ Ishlaringiz menga yoqdi.Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini t
                             </div>
 
                             <h4>Suhrob</h4>
-                            <p> Oyoq kiyim</p>
+                            <p> {t('p13')}</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
-                                    <p>Soxa</p>
-                                    <p>Shahar</p>
+                                <p>{t('p18')}</p>
+                                    <p>{t('p19')}</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p> Oyoq kiyim</p>
+                                    <p>{t('p13')}</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
                             <section className='comments__cards__section'>
                                 <p>
-                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                {t('p26')}
                                 </p>
                             </section>
                             <div className='comments__cards__btn'>
-                                <label for='checkComments5'>Fikrlar</label>
+                                <label for='checkComments5'>{t('btn2')}</label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <SwiperTwo />
                 <div className="helper">
-                    <h2>Biz yordam bergan bizneslar </h2>
+                    <h2>{t('h10')}</h2>
                     <div className="helper__cards">
                         <div>
 
@@ -434,39 +435,39 @@ Ishlaringiz menga yoqdi.Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini t
                 <Validate />
 
                 <div className="aksiya">
-                    <h2>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga ega bo‘ling! </h2>
-                    <p>Joylar soni  chegaralangan</p>
+                    <h2>{t('h12')}</h2>
+                    <p>{t('p23')}</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
                             <span>{timerDays}</span>
-                            <p>Kun</p>
+                            <p>{t('span3')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerHours}</span>
-                            <p>Soat</p>
+                            <p>{t('span4')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerMinutes}</span>
-                            <p>Minut</p>
+                            <p>{t('span5')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerSeconds}</span>
-                            <p>Sekund</p>
+                            <p>{t('span6')}</p>
                         </div>
                     </div>
 
                 </div>
                 <div>
-                    <h2 className="aksiya__title">Bu taklif faqat sizlar uchun</h2>
+                    <h2 className="aksiya__title">{t('h13')}</h2>
                     <div className="aksiya__bottom">
                         <div className='aksiya__bottom__info'>
-                            <p>Xizmatimizdan foydalanish orqali Siz yana quyidagilarga ega bo‘lasiz:</p>
+                            <p>{t('h14')}</p>
                             <ul>
-                                <li><div>1</div>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga</li>
-                                <li><div>2</div> 1 yillik domen va hostingga</li>
-                                <li><div>3</div> Call center botga</li>
-                                <li><div>4</div> Xizmatlar uchun keshbekga</li>
-                                <li><div>5</div> Maxsus sovg’aga</li>
+                                <li><div>1</div>{t('li15')}</li>
+                                <li><div>2</div>{t('li16')}</li>
+                                <li><div>3</div>{t('li17')}</li>
+                                <li><div>4</div>{t('li18')}</li>
+                                <li><div>5</div>{t('li19')}</li>
                             </ul>
                         </div>
                         <div className='aksiya__bottom__img'>

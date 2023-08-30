@@ -1,26 +1,78 @@
 import React from 'react'
-import './Validate.css'
-import logo from '../../imgs/logo.png'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react'
+import classNames from 'classnames'
+import $ from 'jquery'
+import swal from 'sweetalert';
+import classes from './Validate.module.css'
 import mainLogo from '../../imgs/mainLogo.png'
+import { validateName, validatePhoneContent, validatePhoneNumber, validateText,validateTextTwo } from './halper'
 
+const initialData ={
+  name: '',
+  tell: '',
+  text: '',
+  textTwo: '',
+  }
 const Validate = () => {
+  const { t, i18n } = useTranslation();
+  const [fields,setFields] = useState(initialData)
+  const [disablad, setDisablad] = useState(true)
+  useEffect(() => {
+   const isValid =
+   validateName(fields.name) &&
+    validatePhoneNumber(fields.tell) &&
+    validateText(fields.text)&&
+    validateTextTwo(fields.textTwo);
+    setDisablad(!isValid)
 
+  },[fields])
+  const handleChange = (e) => {
+    if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) return
+    setFields((prev) => ({...prev, [e.target.name] : e.target.value}))
+
+  }
+
+
+  var sendtelegram = function(e) {
+
+    swal({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      button: "Jo`natildi!",
+    });
+
+ setFields(initialData)
+e.preventDefault()
+
+    
+};
   return (
-    <div className='Validate' id='validate'>
-      <div className='validate__back'> 
-        <div className='validate__logo'>
+    <div className={classes['Validate']} id='validate'>
+      <div className={classes['validate__back']}> 
+        <div className={classes['validate__logo']}>
            <img src={mainLogo} alt="" />
         </div>
       </div>
 
         <div>
-            <h2 className='validate__title'>Siz bilan bog‘lanishimiz uchun so’rovnomani to‘ldiring</h2>
-            <form className='validate__form'>
-                 <input type="text" placeholder='Ismingiz'/>
-                 <input type="tel" name="" id="" placeholder='Telefon raqamingiz'/>
-                 <input type="text" placeholder='Biznes faoliyatingiz'/>
-                 <input type="text" placeholder='Muammoyingiz'/>
-                 <button>Jo’natish</button>
+            <h2 className={classes['validate__title']}>{t('h11')}</h2>
+            <form className={classes['validate__form']} onSubmit={sendtelegram}>
+                 <input type="text" value={fields.name}  onChange={handleChange} name='name'  placeholder={t('input')}/>
+                 <input type="tel" value={fields.tell} onChange={handleChange} name='tell' placeholder={t('input1')}/>
+                 <input type="text" onChange={handleChange}   value={fields.text}  name='text' placeholder={t('input2')}/>
+                 <input type="text" onChange={handleChange}   value={fields.textTwo} name='textTwo' placeholder={t('input3')}/>
+                 <button
+            
+            className={classNames(classes['order-form__btn'], {
+              [classes['order-form__btn_disabled']]: disablad,
+            })}
+            disabled={disablad}
+          >
+           {t('btn4')}
+          </button>
             </form>
         </div>
     </div>

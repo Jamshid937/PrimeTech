@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import './footer.css'
 import logo from '../../imgs/logo.png'
 import location from '../../imgs/location.png'
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className='footer'>
         <div>
@@ -13,14 +15,14 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer__btn__box'>
-            <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
+            <a href="#validate" className='about__btn'>{t('btn')}</a>
            </div>
 
         <div className='footer__location'>
           <img src={location} alt="" />
           <div>
              <p>Tsohkent shahar</p>
-             <p>Olmazor tumani ,Yangi Olmazor kòchasi,51</p>
+             <p>{t('location')}</p>
           </div>
         </div>
         <div className="creator">
@@ -28,7 +30,7 @@ const Footer = () => {
           <img src={logo} alt="" />
         </div>
         <div className='creator__text'>
-         <p>PrimeTech tomonidan barcha huquqlar himoyalangan</p>
+         <p>{t('creator')}</p>
         </div>
     </div>
   )
