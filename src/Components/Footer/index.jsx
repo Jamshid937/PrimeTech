@@ -13,19 +13,22 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer__btn__box'>
-            <a href="#" className='about__btn'>Ro`yxatdan o`tish</a>
+            <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
            </div>
 
         <div className='footer__location'>
           <img src={location} alt="" />
           <div>
              <p>Tsohkent shahar</p>
-             <p>Toshkent shahar ,Olmazor tumani ,Yangi Olmazor kòchasi,51</p>
+             <p>Olmazor tumani ,Yangi Olmazor kòchasi,51</p>
           </div>
         </div>
         <div className="creator">
           <p>Creat by:</p>
           <img src={logo} alt="" />
+        </div>
+        <div className='creator__text'>
+         <p>PrimeTech tomonidan barcha huquqlar himoyalangan</p>
         </div>
     </div>
   )

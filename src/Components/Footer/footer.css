@@ -58,6 +58,22 @@ padding: 7px 10px;
 width: 53px;
 height: 50px;
 }
+.nav-logo>a>img{
+width: 107px;
+height: 100px;
+}
+.creator__text{
+max-width: 190px;
+width: 100%;
+}
+.creator__text>p{
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 @media screen and (max-width:768px) {
     .footer{
     flex-direction: column;

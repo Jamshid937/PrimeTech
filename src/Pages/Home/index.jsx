@@ -130,20 +130,6 @@ const Home = () => {
                 </Container>
                 <div className='about__box'>
                     <video src={video} autoPlay loop muted></video>
-                    <div className='about__box__info__container'>
-                        <div className='about__box__img'>
-                            <a href="#" className='about__box__logo'><img src={logo} alt="" /></a>
-                            <p>Prime Tech <span>IT</span> bilan shug’ullanadigon kompaniya</p>
-                        </div>
-                        <div className='about__box__info'>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </p>
-                        </div>
-                    </div>
                 </div>
                 <Container>
                 <div className='about__btn__box'>
@@ -191,7 +177,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='about__btn__box'>
-                            <a href="#validate" className='about__btn'>Royhatdan otish</a>
+                            <a href="#validate" className='about__btn'>Ro`yxatdan o`tish</a>
                         </div>
                         <div className='biznes__bottom--gift'>
                             <img src={gift} alt="" />
@@ -412,7 +398,7 @@ const Home = () => {
                 <Validate />
 
                 <div className="aksiya">
-                    <h2>Hoziroq ro‘yxatdan o‘ting va sotuvn 3x  ga oshiradigan  kitobga  ega bo‘ling! </h2>
+                    <h2>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga ega bo‘ling! </h2>
                     <p>Joylar soni  chegaralangan</p>
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
@@ -440,8 +426,8 @@ const Home = () => {
                         <div className='aksiya__bottom__info'>
                             <p>Xizmatimizdan foydalanish orqali Siz yana quyidagilarga ega bo‘lasiz:</p>
                             <ul>
-                                <li><div>1</div>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga </li>
-                                <li><div>2</div> 1 oylik domen va hostingga</li>
+                                <li><div>1</div>Sotuvingizni 30%dan 80%gacha oshiradigan maxsus kitobga</li>
+                                <li><div>2</div> 1 yillik domen va hostingga</li>
                                 <li><div>3</div> Call center botga</li>
                                 <li><div>4</div> Xizmatlar uchun keshbekga</li>
                                 <li><div>5</div> Maxsus sovg’aga</li>
