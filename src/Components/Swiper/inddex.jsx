@@ -8,10 +8,10 @@ import './swipercard.css'
 const SwiperCard = () => {
 
 const scrollLeft = () => {
-    document.getElementById('content').scrollLeft -= 800;
+    document.getElementById('content').scrollLeft -= 380;
 }
 const scrollRight = () => {
-document.getElementById('content').scrollLeft += 800;
+document.getElementById('content').scrollLeft += 380;
 }
   return (
     <div className='shop'>
