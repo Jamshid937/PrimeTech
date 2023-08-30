@@ -53,9 +53,9 @@ function NavBar() {
 
             <li className="nav-item">
               <div className='header__media'>
-                <a href="https://web.telegram.org/"><img src={telegram} alt="" /></a>
-                <a href="https://www.instagram.com/"><img src={instagram} alt="" /></a>
-                <a href="https://ru-ru.facebook.com/"><img src={facebook} alt="" /></a>
+                <a href="https://t.me/PrimeTech_hr4"><img src={telegram} alt="" /></a>
+                <a href="https://instagram.com/primetech_solutions_company?igshid=MzRlODBiNWFlZA=="><img src={instagram} alt="" /></a>
+                <a href="https://m.facebook.com/profile.php?id=100089352438314"><img src={facebook} alt="" /></a>
               </div>
             </li>
 
