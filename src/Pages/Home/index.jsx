@@ -11,10 +11,8 @@ import gift from '../../imgs/Gift.png'
 import who from '../../imgs/mechanical.png'
 import increase from '../../imgs/increase.png'
 import warning from '../../imgs/warning.png'
-import logo from '../../imgs/logo.png'
 import mainLogo from '../../imgs/mainLogo.png'
 import check from '../../imgs/check.png'
-import anvar from '../../imgs/anvar.png'
 import mobion from '../../imgs/mobion.png'
 import aksiya from '../../imgs/aksiya.png'
 import rizvon from '../../imgs/rizvon.png'
@@ -25,11 +23,12 @@ import bek from '../../imgs/bek.png'
 import gesso from '../../imgs/gesso.png'
 import aminows from '../../imgs/aminows.png'
 import video from '../../imgs/PrimeTech.mp4'
-import husanM from '../../imgs/husanM.png'
-import shokirov from '../../imgs/Shokirov.png'
-import Eshonqulov from '../../imgs/Eshonqulov.png'
-import bekzod from '../../imgs/bekzod.png'
-
+import zafar from '../../imgs/zafar.jpg'
+import behzod from '../../imgs/behzod.jpg'
+import beknazar from '../../imgs/beknazar.jpg'
+import dilafruz from '../../imgs/dilafruz.jpg'
+import sadriddin from '../../imgs/sadriddin.jpg'
+import suhrob from '../../imgs/suhrob.jpg'
 import './Home.css'
 
 const Home = () => {
@@ -208,141 +207,178 @@ const Home = () => {
                     <h2>Buning isbotini  tadbirkorlarni fikridan bilib oling</h2>
                     <div className='comments__cards'>
                         <div className='comments__cards__item'>
+                        <input type="checkbox" name="" id='checkComments' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={husanM} alt="" />
+                                    <img src={dilafruz} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4> Bakirova Dilafro‘z</h4>
+                            <p>Shifokor</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
+                                    <p>Shifokor</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments'>Fikrlar</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
+                        <input type="checkbox" name="" id='checkComments1' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={shokirov} alt="" />
+                                    <img src={beknazar} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4>Kamaldinov Beknazar</h4>
+                            <p>Sayohat</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
+                                    <p>Sayohat</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalomu alaykum, men Kamaldinov Beknazar "In cruiser travel" kompaniyasi menejeriman. Bizda mijoz bo‘yicha muammolarimiz bor edi. Shu sababdan, "PrimeTech" IT kompaniyasiga murojaat qildik. Ular bizga veb-sayt tayyorlab berishdi. Hozirda sayt yordamida target sifati oshgan va biz o‘z potinsial mijozlarimizga ega bo‘lyapmiz. Biznes bilan shug‘ullanuvchilarga tavsiyam Siz ham hoziroq "PrimeTech"  IT kompaniyasiga murojaat qiling va biznesdagi muammolaringizga yechim toping! PrimeTech zo‘r!
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments1'>Fikrlar</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
+                        <input type="checkbox" name="" id='checkComments2' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={Eshonqulov} alt="" />
+                                    <img src={zafar} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4> Ashrapov Zafar</h4>
+                            <p>Telefon dòkon</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
-                                    <p>Toshkent</p>
+                                    <p>Telefon dòkon</p>
+                                    <p>Samarqand</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalom alaykum, men Ashrapov Zafar "Mobion" telefon do‘koni asoschisiman. Shu paytgacha barcha ishimni o‘zim qilar edim. Mijozlar bilan gaplashish ko‘p vaqtimni olar edi. Shu kabi muommalar yuzasidan "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga 24/7 ma'lumot bera olaman. Ishlaringiz menga yoqdi. Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments2'>Fikrlar</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
+                        <input type="checkbox" name="" id='checkComments3' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
+                                    <img src={sadriddin} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4>Sadriddin Dehkonov</h4>
+                            <p>Gòsht mahsulotlari</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
+                                    <p>Gòsht mahsulotlari</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalom alaykum, mening ismim Sadriddin. "Al-Lahm" do‘koni asoschisiman. Shu paytgacha barcha ishimni o‘zim qilar edim. Mijozlarimga bir vaqtning o‘zida hamma mahsulotim haqida ma'lumot berish muomma edi. Shu kabi muommalar yuzasida "PrimeTech" IT kompaniyasiga muroajat qildim. Ular menga veb-sayt tayyorlab berishdi. Hozirda sayt orqali men mijozlarimga oldingidan tezroq ma'lumot bera olaman.
+Ishlaringiz menga yoqdi.Boshqa biznesmenlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman.
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments3'>Fikrlar</label>
                             </div>
                         </div>
                         <div className='comments__cards__item'>
+                        <input type="checkbox" name="" id='checkComments4' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={bekzod} alt="" />
+                                    <img src={behzod} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4>Behzod Haldarov</h4>
+                            <p>Ishlab chiqarish</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
+                                    <p>Ishlab chiqarish</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments4'>Fikrlar</label>
                             </div>
                         </div>
-                        <div className='comments__cards__item'>
+                    <div className='comments__cards__item'>
+                        <input type="checkbox"  id='checkComments5' />
                             <div className='comments__cards__img__back'>
                                 <div className='comments__cards__img'>
-                                    <img src={anvar} alt="" />
+                                    <img src={suhrob} alt="" />
                                 </div>
                             </div>
 
-                            <h4>Husan mamasaidov</h4>
-                            <p>Decos,Mfaktor</p>
+                            <h4>Suhrob</h4>
+                            <p> Oyoq kiyim</p>
                             <div className='comments__cards__info'>
                                 <div className='comments__cards__info__text'>
                                     <p>Soxa</p>
                                     <p>Shahar</p>
                                 </div>
                                 <div className='comments__cards__info__text'>
-                                    <p>IT</p>
+                                    <p> Oyoq kiyim</p>
                                     <p>Toshkent</p>
                                 </div>
                             </div>
+                            <section className='comments__cards__section'>
+                                <p>
+                                Assalomu alaykum, men Bakirova Dilafro‘z "Nora medical"    klinikasida nevrolog bo‘lib ishlayman. Menda o‘z shaxsiy brendimni yaratishda biroz muammolar bor edi. Shu bois, "PrimeTech" IT kompaniyasiga murojaat qildim va ular menga veb-sayt tayyorlab berishdi. Hozirda brendimni tanitishda bu veb-sayt menga ancha yordam bermoqda. Sizlarga ham "PrimeTech" IT kompaniyasini tavsiya qilib qolaman. Kompaniyaga esa omad tilayman!
+                                </p>
+                            </section>
                             <div className='comments__cards__btn'>
-                                <a href="">Fikrlar</a>
+                                <label for='checkComments5'>Fikrlar</label>
                             </div>
                         </div>
                     </div>

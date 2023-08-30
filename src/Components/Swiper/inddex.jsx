@@ -20,26 +20,38 @@ document.getElementById('content').scrollLeft += 800;
         <div className='shop__carusel__cards' id='content'>
             <div className='shop__carusel__cards__item--back'>
                 <div className='shop__carusel__cards__item'>
-                    <h4>Husan Mamasaidov</h4>
-                    <p>Decos,Mfaktor</p>
+                    <h4>Bakirova Dilafro‘z </h4>
+                    <p> Shifokor</p>
                 </div>
             </div>
             <div className='shop__carusel__cards__item--back1'>
                 <div className='shop__carusel__cards__item'>
-                    <h4>Xayrullo Shokirov</h4>
-                    <p>AZN fortuna</p>
+                    <h4>Kamaldinov Beknazar</h4>
+                    <p>Sayohat</p>
                 </div>
             </div>
             <div className='shop__carusel__cards__item--back2'>
                 <div className='shop__carusel__cards__item'>
-                    <h4>Abbos Ibrohimov</h4>
-                    <p>Yuksalish</p>
+                    <h4>Ashrapov Zafar</h4>
+                    <p>Telefon dòkon</p>
                 </div>
             </div>
             <div className='shop__carusel__cards__item--back3'>
                 <div className='shop__carusel__cards__item'>
-                    <h4>Husan Mamasaidov</h4>
-                    <p>Decos,Mfaktor</p>
+                    <h4> Sadriddin Dehkonov</h4>
+                    <p>Gòsht mahsulotlari</p>
+                </div>
+            </div>
+            <div className='shop__carusel__cards__item--back4'>
+                <div className='shop__carusel__cards__item'>
+                    <h4> Suhrob</h4>
+                    <p>Oyoq kiyim</p>
+                </div>
+            </div>
+            <div className='shop__carusel__cards__item--back5'>
+                <div className='shop__carusel__cards__item'>
+                    <h4>Behzod Haldarov</h4>
+                    <p>Ishlab chiqarish</p>
                 </div>
             </div>
         </div>

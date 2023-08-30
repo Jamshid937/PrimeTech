@@ -11,6 +11,9 @@
     width: 100%;
     margin-top: 64px;
 }
+.comments__carusel__cards__item__info{
+overflow-x: scroll;
+}
 ::-webkit-scrollbar{
     display: none;
     }
@@ -32,7 +35,11 @@ background: rgba(217, 217, 217, 0.00);
 .comments__carusel__cards__item__info__header{
 list-style: none;
 }
-
+.comments__carusel__cards__item__info__header--img>img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
 
 .comments__carusel__cards__item__info__header--text :first-child{
     color: #FFF;

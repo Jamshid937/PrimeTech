@@ -866,7 +866,11 @@
     /* 45px */
     letter-spacing: -0.33px;
 }
-
+.comments__cards__img>img{
+    width: 340px;
+    height: 310px;
+    border-radius: 15px;
+}
 .comments__cards__item>p {
     color: #001E79;
     font-family: 'Inter';
@@ -919,8 +923,7 @@
     display: flex;
     flex-direction: column;
     padding: 8px;
-
-
+ 
 }
 .comments__cards__item:hover {
 background-color: #1551FF;
@@ -942,14 +945,13 @@ border: #fff solid;
 }
 .comments__cards {
     display: grid;
-    grid-template-rows: auto auto auto;
     grid-template-columns: 350px 350px 350px;
     gap: 0 50px;
     margin-top: 61px;
 }
 
 
-.comments__cards__btn>a {
+.comments__cards__btn>label {
     color: #FFF;
     text-align: center;
     font-family: 'Inter';
@@ -960,6 +962,7 @@ border: #fff solid;
     /* 33px */
     letter-spacing: -0.242px;
     text-decoration: none;
+    
 }
 
 .comments__cards__btn {
@@ -971,8 +974,45 @@ border: #fff solid;
     width: 135px;
     margin: 0 auto;
     margin-top: 28px;
+    margin-bottom: auto;
+    align-items: flex-end;
 }
-
+.comments__cards__item>input{
+display: none;
+}
+.comments__cards__section{
+display: none;
+}
+.comments__cards__section>p{
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 22.5px */
+    letter-spacing: -0.165px;
+}
+#checkComments:checked .comments__cards__item{
+height: 800px;
+    }
+#checkComments:checked ~ .comments__cards__section{
+    display: block;
+    }
+    #checkComments1:checked ~ .comments__cards__section{
+        display: block;
+        }
+        #checkComments2:checked ~ .comments__cards__section{
+            display: block;
+            }
+            #checkComments3:checked ~ .comments__cards__section{
+                display: block;
+                }
+                #checkComments4:checked ~ .comments__cards__section{
+                    display: block;
+                    }
+                    #checkComments5:checked ~ .comments__cards__section{
+                        display: block;
+                        }
 /* comments media */
 @media screen and (max-width:1165px) {
     .comments__cards {

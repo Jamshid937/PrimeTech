@@ -10,19 +10,45 @@
     }
 
 .shop__carusel__cards__item--back {
-    background-image: url('../../imgs/husan.png');
+    background-image: url('../../imgs/dilafruz.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
 }
 .shop__carusel__cards__item--back1 {
-    background-image: url('../../imgs/Xayrulla.png');
+    background-image: url('../../imgs/beknazar.jpg');
     background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
 }
 .shop__carusel__cards__item--back2 {
-    background-image: url('../../imgs/abbos.png');
+    background-image: url('../../imgs/zafar.jpg');
     background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
 }
 .shop__carusel__cards__item--back3{
-    background-image: url('../../imgs/husan.png');
+    background-image: url('../../imgs/sadriddin.jpg');
     background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+.shop__carusel__cards__item--back4{
+    background-image: url('../../imgs/suhrob.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+.shop__carusel__cards__item--back5{
+    background-image: url('../../imgs/behzod.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
 }
 
 .shop__carusel__cards__item {

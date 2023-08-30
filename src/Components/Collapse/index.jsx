@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useCollapse } from 'react-collapsed'
+import React from 'react'
+
 import booking from '../../imgs/booking.png'
 import bot from '../../imgs/bot.png'
 import internet from '../../imgs/internet.png'
@@ -7,8 +7,7 @@ import crm from '../../imgs/crm.png'
 import './collapse.css'
 import Container from '../../layout/Container'
 const Collapse = () => {
-    const [isExpanded, setExpanded] = useState(false)
-    const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+
     return (
     <>
         <div className='services'>
@@ -23,8 +22,8 @@ const Collapse = () => {
                         <img src={internet} alt="" />
                     </div>
                     <h4>Veb sayt</h4>
-                    <p>Siz veb-sayt orqali doimiy potinsial mijozlarga ega bo’lasiz.
-                    </p>
+                    <p>Siz veb-sayt orqali doimiy potinsial mijozlarga ega bo’lasiz.</p>
+                    
                     <section className='collapse__text'>
                         Web saytning biznesingizdagi foydalari quyidagilardan  iborat
                         <br />
