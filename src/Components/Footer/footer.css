@@ -45,6 +45,7 @@ align-items: center;
 padding-left: 10px;
 border-radius: 10px;
 padding: 7px 10px;
+
 }
 .creator>p{
     color: #FFF;
@@ -66,11 +67,12 @@ height: 100px;
 max-width: 280px;
 width: 100%;
 text-align: center;
+margin: 20px auto;
 }
 .creator__text>p{
-    color: #FFF;
-    font-family: sans-serif;
-    font-size: 16px;
+    color: #A7A7A7;
+    font-family: 'inter';
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

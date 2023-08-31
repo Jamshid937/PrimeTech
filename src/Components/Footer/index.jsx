@@ -6,8 +6,9 @@ import location from '../../imgs/location.png'
 const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
+    <>
     <div className='footer'>
-        <div>
+      <div>
         <div className="nav-logo">
               <a exact href="#home"  >
                 <img src={logo} alt="" />
@@ -21,18 +22,26 @@ const Footer = () => {
         <div className='footer__location'>
           <img src={location} alt="" />
           <div>
-             <p>Tsohkent shahar</p>
+             <p>Toshkent shahar</p>
              <p>{t('location')}</p>
           </div>
         </div>
+        <div>
         <div className="creator">
           <p>Creat by:</p>
           <img src={logo} alt="" />
         </div>
-        <div className='creator__text'>
-         <p>{t('creator')}</p>
+
         </div>
+
     </div>
+
+ 
+     <div className='creator__text'>
+       <p>{t('creator')}</p>
+     </div>
+  
+    </>
   )
 }
 
