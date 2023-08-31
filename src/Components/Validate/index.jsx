@@ -33,10 +33,35 @@ const Validate = () => {
     setFields((prev) => ({...prev, [e.target.name] : e.target.value}))
 
   }
-
+  var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
+  var chat_id = 5317445546; 
+  var u_name, tell, message, messageTwo;
+  var ready = function() {
+      u_name = fields.name;
+      tell = fields.tell;
+      message = fields.text;
+      messageTwo = fields.textTwo
+      message = "Ismi: " + u_name + "\nTell: " + tell + "\nBiznes: " + message + "\nMuammo" + messageTwo;
+  };
 
   var sendtelegram = function(e) {
-
+    ready();
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+        },
+        "data": JSON.stringify({
+            "chat_id": chat_id,
+            "text": message
+        })
+    };
+    $.ajax(settings).done(function(response) {
+    });
     swal({
       title: "Good job!",
       text: "You clicked the button!",
