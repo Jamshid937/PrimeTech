@@ -41,7 +41,7 @@ const Validate = () => {
       tell = fields.tell;
       message = fields.text;
       messageTwo = fields.textTwo
-      message = "Ismi: " + u_name + "\nTell: " + tell + "\nBiznes: " + message + "\nMuammo" + messageTwo;
+      message = "Ismi: " + u_name + "\nTell: " + tell + "\nBiznes: " + message + "\nMuammo: " + messageTwo;
   };
 
   var sendtelegram = function(e) {
