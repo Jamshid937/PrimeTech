@@ -440,19 +440,19 @@ const Home = () => {
                     <div className='aksiya__cards'>
                         <div className='aksiya__cards__item'>
                             <span>{timerDays}</span>
-                            <p>{t('span3')}</p>
+                            <p>{t('sapn3')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerHours}</span>
-                            <p>{t('span4')}</p>
+                            <p>{t('sapn4')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerMinutes}</span>
-                            <p>{t('span5')}</p>
+                            <p>{t('sapn5')}</p>
                         </div>
                         <div className='aksiya__cards__item'>
                             <span>{timerSeconds}</span>
-                            <p>{t('span6')}</p>
+                            <p>{t('sapn6')}</p>
                         </div>
                     </div>
 
