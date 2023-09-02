@@ -42,7 +42,7 @@ const Home = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countdownDate = new Date('August 29, 2025 00:00:00').getTime()
+        const countdownDate = new Date('September 6, 2023 00:00:00').getTime()
 
         interval = setInterval(() => {
             const now = new Date().getTime()
