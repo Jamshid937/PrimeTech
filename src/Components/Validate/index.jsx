@@ -1,13 +1,11 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react'
-import classNames from 'classnames'
 import $ from 'jquery'
 import swal from 'sweetalert';
 import classes from './Validate.module.css'
 import mainLogo from '../../imgs/mainLogo.png'
-import { validateName, validatePhoneContent, validatePhoneNumber, validateText,validateTextTwo } from './halper'
+
 
 const initialData ={
   name: '',
@@ -18,20 +16,13 @@ const initialData ={
 const Validate = () => {
   const { t, i18n } = useTranslation();
   const [fields,setFields] = useState(initialData)
-  const [disablad, setDisablad] = useState(true)
-  useEffect(() => {
-   const isValid =
-   validateName(fields.name) &&
-    validatePhoneNumber(fields.tell) &&
-    validateText(fields.text)&&
-    validateTextTwo(fields.textTwo);
-    setDisablad(!isValid)
+  const [error, setError] = useState({})
 
-  },[fields])
   const handleChange = (e) => {
-    if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) return
-    setFields((prev) => ({...prev, [e.target.name] : e.target.value}))
-
+   const {name, value} = e.target
+   setFields({
+      ...fields, [name] : value
+  })
   }
   var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
   var chat_id = 5317445546; 
@@ -60,18 +51,44 @@ const Validate = () => {
             "text": message
         })
     };
-    $.ajax(settings).done(function(response) {
-    });
+
+
+
+
+e.preventDefault()
+const fieldsEror = {}
+if(!fields.name.trim()) {
+  fieldsEror.name = 'username is required'
+}
+
+if(!fields.tell.trim()){
+fieldsEror.tell = 'tell is required'
+} else if(!/^(\+998\d{9}|\d{9})$/.test(fields.tell)){
+  fieldsEror.tell = 'telefon raqamingizni to`liq kiriting'
+}
+if(!fields.text.trim()){
+  fieldsEror.text = 'text is required'
+  } else if(!fields.text.length > 5){
+    fieldsEror.text = 'text not valid'
+  }
+  if(!fields.textTwo.trim()){
+    fieldsEror.textTwo = 'textTwo is required'
+    } else if(!fields.textTwo.length > 5){
+      fieldsEror.textTwo = 'textTwo not valid'
+    }
+setError(fieldsEror)
+
+    if(Object.keys(fieldsEror).length === 0){
     swal({
       title: "Good job!",
       text: "You clicked the button!",
       icon: "success",
       button: "Jo`natildi!",
     });
-
- setFields(initialData)
-e.preventDefault()
-
+        $.ajax(settings).done(function(response) {
+    }); 
+    setFields(initialData)
+    }
     
 };
   return (
@@ -85,20 +102,19 @@ e.preventDefault()
         <div>
             <h2 className={classes['validate__title']}>{t('h11')}</h2>
             <form className={classes['validate__form']} onSubmit={sendtelegram}>
-                 <input type="text" value={fields.name}  onChange={handleChange} name='name'  placeholder={t('input')}/>
-                 <input type="tel" value={fields.tell} onChange={handleChange} name='tell' placeholder={t('input1')}/>
-                 <input type="text" onChange={handleChange}   value={fields.text}  name='text' placeholder={t('input2')}/>
-                 <input type="text" onChange={handleChange}   value={fields.textTwo} name='textTwo' placeholder={t('input3')}/>
-                 <button
+                 <input type="text" value={fields.name}  onChange={handleChange} name='name'  placeholder={t('input')} required/>
+                 {error.name && <span className={classes['validate__form__span']}>{error.name}</span>}
+                 <input type="tel" value={fields.tell} onChange={handleChange} name='tell' placeholder={t('input1')} required trim/>
+                 {error.tell && <span className={classes['validate__form__span']}>{error.tell}</span>}
+                 <input type="text" onChange={handleChange}   value={fields.text}  name='text' placeholder={t('input2')} required/>
+                 {error.text && <span className={classes['validate__form__span']}>{error.text}</span>}
+                 <input type="text" onChange={handleChange}   value={fields.textTwo} name='textTwo' placeholder={t('input3')} required/>
+                 {error.textTwo && <span className={classes['validate__form__span']}>{error.textTwo}</span>}
+                 <button className={classes['validate__form__btn']}>{t('btn4')}</button>
+          </form>
+           
+          
             
-            className={classNames(classes['order-form__btn'], {
-              [classes['order-form__btn_disabled']]: disablad,
-            })}
-            disabled={disablad}
-          >
-           {t('btn4')}
-          </button>
-            </form>
         </div>
     </div>
   )

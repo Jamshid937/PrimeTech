@@ -16,11 +16,12 @@
   background-image: url('../../imgs/back.png');
 background-repeat: no-repeat;
 height: 650px;
-
+background-size: cover;
 }
 .back {
 background-image: url('../../imgs/Rectangle.png');
 height: 650px;
+background-size: cover;
 }
 
 .header__media {

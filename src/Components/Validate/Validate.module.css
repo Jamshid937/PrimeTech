@@ -58,7 +58,7 @@
     width: 100%;
 }
 
-.order-form__btn{
+.validate__form__btn{
     color: #fff;
     border-radius: 10px;
     border: 2px solid #FFF;
@@ -69,9 +69,9 @@
     cursor: pointer;
 }
 
-.order-form__btn_disabled{
-    cursor: not-allowed;
-    opacity: 0.7;
+.validate__form__span{
+color: red;
+font-size: 16px;
 }
 
 @media screen and (max-width:980px) {
